@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Friends Screenplay"
+  short_description: "Normalize Friends screenplay Markdown for parsing"
+  default_prompt: "Use $clean-friends-screenplay to normalize Friends screenplay Markdown before JSONL parsing."
