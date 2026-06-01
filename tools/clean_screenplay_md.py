@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Parse Friends screenplay Markdown into JSON/JSONL event data."""
+"""把老友记md格式的剧本文件转化为json和jsonl格式"""
 
 from __future__ import annotations
 

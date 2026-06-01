@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert Friends episode descriptions Markdown into JSONL."""
+"""把老友记剧集简介md文件转化为jsonl格式"""
 
 from __future__ import annotations
 
