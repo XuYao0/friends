@@ -22,26 +22,110 @@ DEFAULT_SEASON = 1
 DEFAULT_EPISODE = 1
 
 EMOTION_LABELS: list[tuple[str, str, str]] = [
-    ("anger", "愤怒", "被冒犯、被阻碍、不公对待或目标受损时的对抗性情绪。"),
-    ("disgust", "厌恶", "对对象、行为、想法或情境产生反感、排斥或想远离。"),
-    ("fear", "恐惧", "面对威胁、危险、惩罚、损失或坏结果预期时的防御性情绪。"),
-    ("happiness", "快乐", "一般正向愉悦、高兴、开心或愿望满足。"),
-    ("surprise", "惊讶", "现实突然偏离预期时的定向反应，可正向、负向或中性。"),
-    ("sadness", "悲伤", "失去、失败、分离、拒绝、失望或关系受损引发的低落。"),
-    ("contentment", "满足", "需求被满足、处境舒适安稳、没有急迫未满足需求时的平静正向情绪。"),
-    ("relief", "如释重负", "先前威胁、压力、担忧或坏结果预期解除后的放松性正向情绪。"),
-    ("interest", "兴趣", "注意被对象、信息、人物或可能性吸引，并想继续了解、观察或参与。"),
-    ("contempt", "轻蔑", "对对象产生贬低性评价，认为其愚蠢、低劣、不值得尊重或可笑。"),
-    ("shame", "羞耻", "自我形象、身份或价值暴露出缺陷时产生的自我否定和想隐藏的情绪。"),
-    ("guilt", "内疚", "认为自己做错事、伤害别人、违反责任或承诺时产生的自责。"),
-    ("embarrassment", "尴尬", "轻度社交失误、失态、被撞见、私人信息暴露或场面不合适引发的不适。"),
-    ("neutral", "中性", "无明显情绪，或证据不足以判断具体情绪。"),
+    (
+        "anger",
+        "anger",
+        "A confrontational emotion caused by being offended, blocked, treated unfairly, misunderstood, controlled, or having an important goal harmed. "
+        "Common signs include arguing back, blaming, sarcasm, commands, raised intensity, threats, boundary-setting, or trying to force the situation to change. "
+        "Low anger may appear as annoyance, resistance, or dissatisfaction; it does not need to be an outburst.",
+    ),
+    (
+        "disgust",
+        "disgust",
+        "Aversion, revulsion, rejection, or a desire to distance oneself from an object, behavior, idea, bodily/moral contamination, or situation. "
+        "Its core appraisal is: this is something I do not want to approach, accept, or be associated with. "
+        "Do not use disgust for ordinary dislike; use it when there is clear repulsion, grossed-out reaction, rejection, or moral disgust.",
+    ),
+    (
+        "fear",
+        "fear",
+        "A defensive emotion in response to threat, danger, punishment, loss, relationship damage, failure, or an anticipated bad outcome. "
+        "It may appear as worry, nervousness, panic, seeking help, avoidance, repeated checking, soothing someone, or trying to control risk. "
+        "Worry, concern, and anxiety usually belong under fear, especially when the speaker is focused on a possible future bad outcome.",
+    ),
+    (
+        "happiness",
+        "happiness",
+        "A positive approach emotion: pleasure, joy, amusement, satisfaction of a wish, smooth social interaction, or optimism that things are improving. "
+        "Use it when the speaker is joking, teasing, playfully provoking, enjoying an interaction, celebrating, anticipating something good, or feeling optimistic. "
+        "Do not label happiness merely because the audience would laugh; the speaker must show personal pleasure, amusement, or positive engagement.",
+    ),
+    (
+        "surprise",
+        "surprise",
+        "An orienting reaction when reality suddenly violates expectations, through abnormal information, coincidence, revelation, interruption, or an abrupt turn. "
+        "It can be positive, negative, or neutral, and often appears as shock, disbelief, sudden realization, 'what?', 'really?', or being caught off guard. "
+        "If surprise quickly becomes fear, anger, or happiness, it may be paired with that emotion; if the utterance is merely seeking information, prefer interest.",
+    ),
+    (
+        "sadness",
+        "sadness",
+        "A low-energy negative emotion caused by loss, failure, separation, rejection, disappointment, damaged relationships, frustrated wishes, or sympathy for another person's pain. "
+        "Common signs include dejection, crying, low energy, nostalgia, self-pity, accepting bad news, expressing hurt, or feeling bad for someone. "
+        "If the core is worry that something bad may happen, use fear; if the core is an already-felt loss or disappointment, use sadness.",
+    ),
+    (
+        "contentment",
+        "contentment",
+        "A calm positive emotion when needs are met, the situation feels comfortable and stable, relationships feel secure, or there is no urgent unmet need. "
+        "It is lower-arousal and more settled than happiness: ease, comfort, being satisfied with the present. "
+        "Do not use contentment for excitement, jokes, or anticipation of good things; those are usually happiness or interest.",
+    ),
+    (
+        "relief",
+        "relief",
+        "A relaxing positive emotion after a prior threat, pressure, worry, uncertain bad outcome, or embarrassment risk is removed or reduced. "
+        "Its core structure is: I was worried or tense, and now it is okay or getting better. "
+        "It often follows fear, embarrassment, or sadness; do not use relief unless some prior pressure or risk has been lifted.",
+    ),
+    (
+        "interest",
+        "interest",
+        "Attention is drawn to an object, information, person, activity, or possibility, with a desire to learn more, confirm, observe, or participate. "
+        "Common signs include genuine questions, follow-up questions, testing a possibility, exploring an opportunity, or being drawn in by new information. "
+        "Short questions are usually interest; label surprise only when the question mainly reacts to something unexpected or logically strange.",
+    ),
+    (
+        "contempt",
+        "contempt",
+        "A devaluing judgment that someone or something is stupid, inferior, ridiculous, unworthy of respect, or laughable. "
+        "Common signs include condescension, put-downs, scorn, mockery, dismissing someone's worth, or treating someone as beneath the speaker. "
+        "It differs from anger's confrontation and disgust's rejection; the core is: you or this thing is low-value.",
+    ),
+    (
+        "shame",
+        "shame",
+        "Painful self-evaluation when one's identity, image, worth, or socially visible self seems flawed or exposed. "
+        "Its core is: I, or my image, am bad or defective. It often brings a desire to hide, avoid being seen, or shrink socially. "
+        "It is deeper and more self-worth-focused than embarrassment, and less focused on a specific harmful action than guilt.",
+    ),
+    (
+        "guilt",
+        "guilt",
+        "Self-blame from believing one has done something wrong, hurt someone, violated a duty, broken a promise, or failed a moral standard. "
+        "Its core is: I did wrong or I owe someone. It often leads to apology, repair, compensation, explanation, or attempts to fix the relationship. "
+        "If the pain is about looking bad, use shame or embarrassment; if it is about a specific harmful action or responsibility, use guilt.",
+    ),
+    (
+        "embarrassment",
+        "embarrassment",
+        "Mild to moderate discomfort from a social mistake, awkward exposure, being noticed, private information being revealed, sexual/body topics, an inappropriate situation, or verbal avoidance. "
+        "Common signs include covering up, interrupting, changing topic, indirect wording, laughing it off, awkwardness, or not wanting to say something directly. "
+        "It is lighter and more situation-specific than shame; clear avoidance or social exposure can justify low embarrassment even when the surface line is calm.",
+    ),
+    (
+        "neutral",
+        "neutral",
+        "No clear emotion, or not enough evidence to identify a specific emotion. "
+        "Use it for factual statements, ordinary confirmations, functional transitions, mild polite exchanges, or lines with no clear appraisal. "
+        "Do not use neutral merely because the emotion is weak; if there is clear low-intensity evidence, choose the relevant emotion with low intensity.",
+    ),
 ]
 INTENSITIES = {
-    "low": "弱：情绪存在但轻微。",
-    "medium": "中：情绪明确可识别，但未达到强烈爆发或极端状态。",
-    "high": "强：情绪强烈，通常伴随明显爆发、压倒性反应或强烈行动倾向。",
-    "none": "无：仅用于 neutral。",
+    "low": "Weak: the emotion is present but mild.",
+    "medium": "Medium: the emotion is clearly identifiable but not an intense outburst or extreme state.",
+    "high": "High: the emotion is strong, usually with obvious escalation, overwhelming reaction, or strong action tendency.",
+    "none": "None: only used for neutral.",
 }
 
 
@@ -131,14 +215,14 @@ def event_utterances(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def labels_text() -> str:
-    label_lines = [f"- {name} ({zh}): {description}" for name, zh, description in EMOTION_LABELS]
+    label_lines = [f"- {name}: {description}" for name, _, description in EMOTION_LABELS]
     intensity_lines = [f"- {name}: {description}" for name, description in INTENSITIES.items()]
     return "\n".join(
         [
-            "可用 emotion 标签：",
+            "Available emotion labels:",
             *label_lines,
             "",
-            "可用 intensity 标签：",
+            "Available intensity labels:",
             *intensity_lines,
         ]
     )
@@ -206,9 +290,10 @@ def build_user_prompt(
             "- Do not over-interpret jokes, filler lines, brief confirmations, or casual narration.",
             "- Distinguish the speaker's current feeling from the audience's amusement, the comedic function of the line.",
             "- A funny line is not happiness unless the speaker is personally amused.",
-            "- When describing an event, actually the event happening now is not the described event, it's the 'describing' itself. Put yourself in the describing, feel the emotions in the describing, instead of the described event.",
+            "- When the speaker describes an event, the act of describing can itself carry emotion. Also evaluate whether the described event still has an emotional impact on the speaker at the moment of speaking. Consider both the emotion in the act of describing and the remaining emotional impact of the described event.",
+            "- Stage directions and inline descriptions are strong evidence for the speaker's current state; use them together with the dialogue context rather than treating them as background only.",
+            "- If an utterance is a joke built from the immediate situation, infer the speaker's reaction to that situation, not only the surface wording of the joke.",
             "- If the direct reading is neutral or low-intensity, keep it neutral or low unless there is clear textual or contextual evidence for a stronger emotion.",
-            "- For short clarification questions, use interest when the speaker mainly seeks information; use surprise only when the utterance reacts to something unexpected or logically strange.",
             "",
             "Return this JSON object shape:",
             '{"utterance_id": 1, "speaker": "Monica", "emotions": ["neutral"], '
@@ -489,6 +574,8 @@ def main() -> None:
         )
         print(index)
         write_output(args.output, output)
+        if index > 100:
+            break
 
     write_output(args.output, output)
 
