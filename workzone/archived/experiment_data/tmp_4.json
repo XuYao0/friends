@@ -1,0 +1,546 @@
+{
+  "metadata": {
+    "season": 1,
+    "episode": 1,
+    "model": "deepseek-v4-pro",
+    "base_url": "https://api.deepseek.com",
+    "records": "screenplays/converted_chunks/cleaned/friends_records.jsonl",
+    "descriptions": "screenplays/converted_chunks/episode_descriptions.jsonl",
+    "created_at": "2026-06-02T08:52:44.812001+00:00",
+    "request_strategy": "For utterance n, send the fixed instruction, episode synopsis, and utterances 1..n; the newest utterance is appended at the end for cache locality."
+  },
+  "episode_description": "After leaving her fiancé, Barry, at the altar, Rachel (Jennifer Aniston) finds herself in Central Perk Café, soaking wet in her wedding dress, looking for her old friend Monica (Courteney Cox). Rachel ends up moving into Monica's New York apartment. Chandler (Matthew Perry) and Joey (Matt LeBlanc), who live across the hall from Monica, console Monica's older brother, Ross (David Schwimmer), whose wife, Carol, has just left him for a woman; Rachel's reappearance revives Ross' crush on her, which dates back to high school. Monica falls for Paul \"the wine guy,\" (John Allen Nelson) only to be crushed to learn that he lied about a bad breakup to have a one-night stand with her. The gang urges Rachel to be more independent by cutting up her father's credit cards; Rachel, who has never worked before, subsequently gets a job as a waitress at Central Perk.",
+  "results": [
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 1,
+        "global_utterance_id": 1,
+        "speaker": "Monica",
+        "utterance": "There's nothing to tell! He's just some guy I work with!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 1,
+        "speaker": "Monica",
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "reason": "Monica is deflecting attention from a romantic topic, likely feeling self-conscious or exposed when her personal life is brought up in front of the group."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1146,
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 122,
+        "completion_tokens": 68,
+        "total_tokens": 1214,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 2,
+        "global_utterance_id": 2,
+        "speaker": "Joey",
+        "utterance": "C'mon, you're going out with the guy! There's gotta be something wrong with him!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 2,
+        "speaker": "Joey",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "reason": "Joey is teasing Monica and showing curiosity about her date, urging her to reveal flaws, indicating engaged interest."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1177,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 25,
+        "completion_tokens": 58,
+        "total_tokens": 1235,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 3,
+        "global_utterance_id": 3,
+        "speaker": "Chandler",
+        "utterance": "All right Joey, be nice. So does he have a hump? A hump and a hairpiece?",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 3,
+        "speaker": "Chandler",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler is lightly teasing Monica by asking a ridiculous question, showing mild curiosity and amusement rather than strong emotion."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1206,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 54,
+        "completion_tokens": 64,
+        "total_tokens": 1270,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 4,
+        "global_utterance_id": 4,
+        "speaker": "Phoebe",
+        "utterance": "Wait, does he eat chalk?",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 4,
+        "speaker": "Phoebe",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Phoebe asks a quirky question to join the playful interrogation about Monica's date, showing mild curiosity without strong emotion."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1202,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 50,
+        "completion_tokens": 65,
+        "total_tokens": 1267,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 5,
+        "global_utterance_id": 5,
+        "speaker": "Phoebe",
+        "utterance": "Just, 'cause, I don't want her to go through what I went through with Carl- oh!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 5,
+        "speaker": "Phoebe",
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Phoebe starts explaining her odd question, then abruptly stops with 'oh!', likely realizing how strange it sounded after the others stared at her. She probably feels a bit embarrassed by the awkwardness."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1253,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 101,
+        "completion_tokens": 84,
+        "total_tokens": 1337,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 6,
+        "global_utterance_id": 6,
+        "speaker": "Monica",
+        "utterance": "Okay, everybody relax. This is not even a date. It's just two people going out to dinner and- not having sex.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 6,
+        "speaker": "Monica",
+        "emotions": [
+          "embarrassment",
+          "interest"
+        ],
+        "intensities": [
+          "medium",
+          "low"
+        ],
+        "reason": "Monica feels embarrassed because her friends are teasing her about the guy from work and is trying to downplay the situation to deflect attention. She also shows low interest in clarifying the nature of the outing to manage her friends' expectations."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1289,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 9,
+        "completion_tokens": 96,
+        "total_tokens": 1385,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 7,
+        "global_utterance_id": 7,
+        "speaker": "Chandler",
+        "utterance": "Sounds like a date to me.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 7,
+        "speaker": "Chandler",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler is pointing out a logical inconsistency, showing mild engaged attention, but without strong surprise or other emotion."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1280,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 128,
+        "completion_tokens": 58,
+        "total_tokens": 1338,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 8,
+        "global_utterance_id": 8,
+        "speaker": "Chandler",
+        "utterance": "Alright, so I'm back in high school, I'm standing in the middle of the cafeteria, and I realize I am totally naked.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 8,
+        "speaker": "Chandler",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Chandler is casually telling a humorous anecdote about a dream; he does not display personal emotional arousal."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1340,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 60,
+        "completion_tokens": 63,
+        "total_tokens": 1403,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 9,
+        "global_utterance_id": 9,
+        "speaker": "All",
+        "utterance": "Oh, yeah. Had that dream.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 9,
+        "speaker": "All",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "The group acknowledges Chandler's dream with casual recognition, showing mild interest but no strong emotional reaction."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1331,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 51,
+        "completion_tokens": 60,
+        "total_tokens": 1391,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 10,
+        "global_utterance_id": 10,
+        "speaker": "Chandler",
+        "utterance": "Then I look down, and I realize there's a phone... there.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 10,
+        "speaker": "Chandler",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler is recounting a bizarre dream and seems mildly engaged in describing the strange detail, but his tone is casual and not strongly emotional."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1358,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 78,
+        "completion_tokens": 70,
+        "total_tokens": 1428,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 11,
+        "global_utterance_id": 11,
+        "speaker": "Joey",
+        "utterance": "Instead of...?",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 11,
+        "speaker": "Joey",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "reason": "Joey is asking a clarification question about Chandler's dream, seeking more information about what is missing or unusual."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1355,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 75,
+        "completion_tokens": 64,
+        "total_tokens": 1419,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 12,
+        "global_utterance_id": 12,
+        "speaker": "Chandler",
+        "utterance": "That's right.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 12,
+        "speaker": "Chandler",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Chandler simply confirms Joey's guess in a casual, matter-of-fact tone."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1363,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 83,
+        "completion_tokens": 59,
+        "total_tokens": 1422,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 13,
+        "global_utterance_id": 13,
+        "speaker": "Joey",
+        "utterance": "Never had that dream.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 13,
+        "speaker": "Joey",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Joey's statement is a simple factual remark about not having experienced a specific dream, with no detectable emotional expression."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1373,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 93,
+        "completion_tokens": 65,
+        "total_tokens": 1438,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 14,
+        "global_utterance_id": 14,
+        "speaker": "Phoebe",
+        "utterance": "No.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 14,
+        "speaker": "Phoebe",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Phoebe's brief 'No.' is a simple, unemotional denial in response to Joey's statement, with no evident emotional expression."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1377,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 97,
+        "completion_tokens": 63,
+        "total_tokens": 1440,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 15,
+        "global_utterance_id": 15,
+        "speaker": "Chandler",
+        "utterance": "All of a sudden, the phone starts to ring. Now I don't know what to do, everybody starts looking at me.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 15,
+        "speaker": "Chandler",
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "reason": "Chandler is recounting a dream where he is naked in public and a phone rings, drawing attention. The phrase 'everybody starts looking at me' highlights the social exposure and awkwardness, indicating embarrassment."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1431,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 23,
+        "completion_tokens": 86,
+        "total_tokens": 1517,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 16,
+        "global_utterance_id": 16,
+        "speaker": "Monica",
+        "utterance": "And they weren't looking at you before?!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 16,
+        "speaker": "Monica",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "reason": "Monica questions the logic of Chandler's dream, pointing out he was already naked in the cafeteria. Her tone is inquisitive with mild amusement rather than strong surprise."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1428,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 20,
+        "completion_tokens": 75,
+        "total_tokens": 1503,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 17,
+        "global_utterance_id": 17,
+        "speaker": "Chandler",
+        "utterance": "Finally, I figure I'd better answer it, and it turns out it's my mother, which is very-very weird, because- she never calls me!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 17,
+        "speaker": "Chandler",
+        "emotions": [
+          "interest",
+          "surprise"
+        ],
+        "intensities": [
+          "medium",
+          "low"
+        ],
+        "reason": "Chandler is actively recounting a bizarre dream, showing interest in sharing the strange details. The 'very-very weird' and 'never calls me' reveal mild surprise at the unexpected phone call from his mother in the dream context."
+      },
+      "cot": "",
+      "usage": {
+        "prompt_tokens": 1489,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 81,
+        "completion_tokens": 96,
+        "total_tokens": 1585,
+        "reasoning_tokens": null
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

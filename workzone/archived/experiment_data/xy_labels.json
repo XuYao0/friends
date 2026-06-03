@@ -1,0 +1,1580 @@
+{
+  "metadata": {
+    "source": [
+      "workzone/tmp.json",
+      "workzone/tmp_1.json"
+    ],
+    "created_at": "2026-06-03T06:30:01.676485+00:00",
+    "updated_at": "2026-06-03T09:30:32.447965+00:00"
+  },
+  "labels": {
+    "1": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "low",
+        "reason": "monica 并不想讲述这个与她一起工作的男同事，面对别人的询问，她感到些微尴尬。"
+      },
+      "updated_at": "2026-06-03T06:30:01.676499+00:00"
+    },
+    "2": {
+      "xy_label": {
+        "emotions": [
+          "happiness",
+          "interest"
+        ],
+        "intensities": [
+          "low",
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Joey 既是真想知道 monica 的约会对象的更多细节，同时也是在开 monica 的玩笑——“正常人不会和你出去约会，所以告诉我们更多细节吧”，人在开玩笑的时候心情是比较愉悦的。"
+      },
+      "updated_at": "2026-06-03T06:34:05.039218+00:00"
+    },
+    "3": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Chandler is joking and teasing Monica about her date, showing amusement."
+      },
+      "updated_at": "2026-06-03T06:34:40.023980+00:00"
+    },
+    "4": {
+      "xy_label": {
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "interest",
+        "intensity": "low",
+        "reason": "Phoebe interjects with a quirky, offbeat question, showing mild curiosity about the guy's possible strange habits."
+      },
+      "updated_at": "2026-06-03T06:35:07.986017+00:00"
+    },
+    "5": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "low",
+        "reason": "She starts to explain her chalk question but catches herself oversharing, causing mild embarrassment."
+      },
+      "updated_at": "2026-06-03T06:35:53.745083+00:00"
+    },
+    "6": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "medium",
+        "reason": "She is flustered and defensive after her friends' teasing, and her awkward clarification 'not having sex' reveals embarrassment."
+      },
+      "updated_at": "2026-06-03T06:36:21.363333+00:00"
+    },
+    "7": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Chandler makes a dry, sarcastic observation without displaying strong emotion."
+      },
+      "updated_at": "2026-06-03T06:36:52.617708+00:00"
+    },
+    "8": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Chandler is starting to tell a humorous anecdote; his tone is casual and narrative, with no strong emotion evident."
+      },
+      "updated_at": "2026-06-03T06:37:07.090932+00:00"
+    },
+    "9": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "The group casually acknowledges a common dream scenario, showing mild recognition without significant emotion."
+      },
+      "updated_at": "2026-06-03T06:37:22.307450+00:00"
+    },
+    "10": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "low",
+        "reason": "Chandler 在讲述的过程中，说自己低头看到了一台手机，there 这个词本该是具体的身体部位，但是 chandler 不好意思说出口，说明应该是生殖器官。"
+      },
+      "updated_at": "2026-06-03T06:46:54.982962+00:00"
+    },
+    "11": {
+      "xy_label": {
+        "emotions": [
+          "interest",
+          "surprise"
+        ],
+        "intensities": [
+          "low",
+          "low"
+        ],
+        "emotion": "interest",
+        "intensity": "low",
+        "reason": "Joey is asking for clarification on the odd dream detail, showing mild curiosity about what the phone replaced. 他说的是 instead of，因此可知他心里对phone所在的位置应该是什么是有答案的，但是他依然要问出来，因为他不确信这个答案是否正确，这种不确信也说明了他的惊讶情绪。"
+      },
+      "updated_at": "2026-06-03T06:43:47.137226+00:00"
+    },
+    "12": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "medium",
+        "reason": "Chandler 及时打断并肯定了 joey 的说法，因为他不希望 joey 将phone所在的部位在公众场合说出来，这让他感到尴尬。"
+      },
+      "updated_at": "2026-06-03T06:45:07.376818+00:00"
+    },
+    "13": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Joey simply remarks that he has never had a dream like Chandler's, a brief factual statement in casual conversation."
+      },
+      "updated_at": "2026-06-03T06:47:13.273458+00:00"
+    },
+    "14": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Phoebe simply states she hasn’t had the dream, with no detectable emotional expression."
+      },
+      "updated_at": "2026-06-03T06:48:02.437836+00:00"
+    },
+    "15": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Chandler is matter-of-factly continuing his dream narrative without displaying strong emotion; the line serves to develop the story for his friends."
+      },
+      "updated_at": "2026-06-03T06:49:14.752807+00:00"
+    },
+    "16": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Monica is playfully teasing Chandler by sarcastically highlighting the absurdity in his dream story, showing mild amusement."
+      },
+      "updated_at": "2026-06-03T06:49:32.471271+00:00"
+    },
+    "17": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment",
+          "surprise"
+        ],
+        "intensities": [
+          "medium",
+          "medium"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "medium",
+        "reason": "chandler 在梦里赤裸着接到了来自自己母亲的电话，而电话此刻长在了原本该是他生殖器官的地方，这种怪异的梦境让即便已经是事后描述的 chandler 也倍感惊讶和尴尬，从他连用两个 very 可以看出来。"
+      },
+      "updated_at": "2026-06-03T06:52:06.366634+00:00"
+    },
+    "18": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "emotion": "sadness",
+        "intensity": "high",
+        "reason": "Ross enters and says a simple 'Hi.' but the stage direction indicates he is mortified, likely due to his wife leaving him for a woman, which is a source of deep sadness."
+      },
+      "updated_at": "2026-06-03T06:53:43.549400+00:00"
+    },
+    "19": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Joey makes a hyperbolic joke about Ross's depressed greeting, showing no genuine strong emotion; it's a comedic line."
+      },
+      "updated_at": "2026-06-03T06:53:58.949142+00:00"
+    },
+    "20": {
+      "xy_label": {
+        "emotions": [
+          "fear"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "fear",
+        "intensity": "low",
+        "reason": "Monica notices Ross is mortified and asks with gentle concern, 对 ross 的情况感到担忧。"
+      },
+      "updated_at": "2026-06-03T06:57:29.842835+00:00"
+    },
+    "21": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "emotion": "sadness",
+        "intensity": "high",
+        "reason": "Ross uses a graphic metaphor to convey the intense emotional pain and grief caused by his wife leaving him."
+      },
+      "updated_at": "2026-06-03T06:57:42.646996+00:00"
+    },
+    "22": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Chandler offers a cookie in response to Ross's dramatic metaphor, likely to lighten the mood, showing no strong emotion. 这实际上是一种喜剧效果，正常人应该关心 ross 发生了什么，但是 chandler 此时只是递给 ross 一些 cokkie，好像 ross 什么也没有发生，就像平时一样正常地和他们会面。"
+      },
+      "updated_at": "2026-06-03T06:59:51.954422+00:00"
+    },
+    "23": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "sadness",
+        "intensity": "low",
+        "reason": "Monica is calmly explaining the upsetting reason for Ross's distress, conveying sadness for her brother's situation."
+      },
+      "updated_at": "2026-06-03T07:00:34.871677+00:00"
+    },
+    "24": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "sadness",
+        "intensity": "low",
+        "reason": "Joey reacts to the news that Ross's wife moved out with a sympathetic 'Ohh,' expressing mild sadness for his friend's situation."
+      },
+      "updated_at": "2026-06-03T07:00:46.308844+00:00"
+    },
+    "25": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Monica makes a simple supportive offer without explicit emotional expression."
+      },
+      "updated_at": "2026-06-03T07:00:58.565960+00:00"
+    },
+    "26": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "sadness",
+        "intensity": "low",
+        "reason": "Ross is deeply distressed after his wife left him, and his thanks is a subdued acknowledgment of Monica's kindness while he remains sorrowful."
+      },
+      "updated_at": "2026-06-03T07:01:56.620940+00:00"
+    },
+    "27": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Phoebe notices something about Ross's aura, prompting her typical spiritual behavior."
+      },
+      "updated_at": "2026-06-03T07:06:04.558886+00:00"
+    },
+    "28": {
+      "xy_label": {
+        "emotions": [
+          "anger"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "anger",
+        "intensity": "medium",
+        "reason": "Ross is already distressed about his wife leaving and wants to be left alone; Phoebe's aura cleansing feels intrusive, and he reacts with evident irritation."
+      },
+      "updated_at": "2026-06-03T07:06:23.025415+00:00"
+    },
+    "29": {
+      "xy_label": {
+        "emotions": [
+          "anger"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "anger",
+        "intensity": "low",
+        "reason": "Phoebe responds with mild irritation after Ross rejects her attempt to cleanse his aura and tells her to leave him alone."
+      },
+      "updated_at": "2026-06-03T07:06:53.316652+00:00"
+    },
+    "30": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "sadness",
+        "intensity": "medium",
+        "reason": "Ross is heartbroken about his wife Carol moving out. He tries to downplay his pain and says he hopes she will be happy, but his earlier dramatic description and defensive tone reveal ongoing sadness. The line is a brave facade masking clear emotional hurt."
+      },
+      "updated_at": "2026-06-03T07:07:45.385956+00:00"
+    },
+    "31": {
+      "xy_label": {
+        "emotions": [
+          "contempt"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "contempt",
+        "intensity": "low",
+        "reason": "Monica dryly contradicts Ross's false noble statement, showing mild contempt for his pretense."
+      },
+      "updated_at": "2026-06-03T07:08:24.671692+00:00"
+    },
+    "32": {
+      "xy_label": {
+        "emotions": [
+          "anger"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "emotion": "anger",
+        "intensity": "high",
+        "reason": "After Monica calls out his insincere well-wish, Ross drops the pretense and vents his raw bitterness, cursing his wife for abandoning him. The outburst reveals strong, unfiltered anger."
+      },
+      "updated_at": "2026-06-03T07:08:42.115720+00:00"
+    },
+    "33": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Joey 安慰 ross，他和 carol 分开并不是他的错，他并不知道 carol 是个女同性恋。"
+      },
+      "updated_at": "2026-06-03T07:12:22.497792+00:00"
+    },
+    "34": {
+      "xy_label": {
+        "emotions": [
+          "anger"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "anger",
+        "intensity": "medium",
+        "reason": "Ross snaps defensively after Joey's comment, his outburst and sharp tone convey frustration and anger about people repeatedly focusing on his ex-wife's sexuality."
+      },
+      "updated_at": "2026-06-03T07:13:16.669441+00:00"
+    },
+    "35": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "low",
+        "reason": "Chandler makes an offhand joke in a serious moment, then realizes he said it aloud, leading to mild sheepishness as everyone stares."
+      },
+      "updated_at": "2026-06-03T07:14:16.034655+00:00"
+    },
+    "36": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "sadness",
+        "intensity": "low",
+        "reason": "Ross is still processing his wife leaving him; he reports telling his parents with a subdued tone that carries underlying sadness from the context of his breakup."
+      },
+      "updated_at": "2026-06-03T07:14:46.756999+00:00"
+    },
+    "37": {
+      "xy_label": {
+        "emotions": [
+          "contempt"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "contempt",
+        "intensity": "medium",
+        "reason": "Monica sarcastically mocks Ross's claim that their parents took the news well, revealing their mother's hysterical call, thus showing contempt for his misjudgment."
+      },
+      "updated_at": "2026-06-03T07:15:20.545700+00:00"
+    },
+    "38": {
+      "xy_label": {
+        "emotions": [
+          "guilt"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "guilt",
+        "intensity": "medium",
+        "reason": "Ross apologizes because his revelation to his parents caused his mother's hysterical call, feeling guilty for the distress he caused."
+      },
+      "updated_at": "2026-06-03T07:16:29.975402+00:00"
+    },
+    "39": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Joey is calmly acknowledging Ross's pain and offering help, without expressing a strong personal emotion."
+      },
+      "updated_at": "2026-06-03T07:16:45.152912+00:00"
+    },
+    "40": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Joey is playfully and enthusiastically suggesting a strip joint to cheer up Ross, reflecting his own amusement and high spirits."
+      },
+      "updated_at": "2026-06-03T07:17:00.126238+00:00"
+    },
+    "41": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "sadness",
+        "intensity": "medium",
+        "reason": "He is grieving the loss of his marriage and expresses a longing to be married again, rejecting the idea of enjoying single life."
+      },
+      "updated_at": "2026-06-03T07:17:12.336676+00:00"
+    },
+    "42": {
+      "xy_label": {
+        "emotions": [
+          "surprise"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "emotion": "surprise",
+        "intensity": "high",
+        "reason": "Chandler 发现 ross 说自己想要结婚之后，就有一个身着婚纱的新娘走了进来，他难以置信，这好像 ross 的愿望得到了上帝的实现一样。于是他也许愿，说自己想要一百万美元。"
+      },
+      "updated_at": "2026-06-03T07:25:22.608548+00:00"
+    },
+    "43": {
+      "xy_label": {
+        "emotions": [
+          "surprise"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "surprise",
+        "intensity": "medium",
+        "reason": "Monica suddenly sees Rachel, her old friend, entering the café soaking wet in a wedding dress, which is highly unexpected and startling."
+      },
+      "updated_at": "2026-06-03T07:25:35.569410+00:00"
+    },
+    "44": {
+      "xy_label": {
+        "emotions": [
+          "relief"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "emotion": "relief",
+        "intensity": "high",
+        "reason": "After fleeing her wedding and urgently searching for Monica, Rachel finally finds her and erupts in rapid, excited speech expressing overwhelming relief and joy."
+      },
+      "updated_at": "2026-06-03T07:25:58.431417+00:00"
+    },
+    "45": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "The waitress is performing a routine service interaction; there is no indication of any emotional state beyond neutral."
+      },
+      "updated_at": "2026-06-03T07:26:05.311888+00:00"
+    },
+    "46": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Monica is calmly introducing her old friend Rachel to the group in a matter-of-fact and welcoming manner."
+      },
+      "updated_at": "2026-06-03T07:26:20.218058+00:00"
+    },
+    "47": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Rachel responds to Monica's introduction with a brief, polite greeting, showing no strong emotion."
+      },
+      "updated_at": "2026-06-03T07:26:37.107937+00:00"
+    },
+    "48": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Ross offers a simple, subdued greeting in response to Rachel's, showing no strong emotion despite his recent heartbreak."
+      },
+      "updated_at": "2026-06-03T07:29:17.487004+00:00"
+    },
+    "49": {
+      "xy_label": {
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "interest",
+        "intensity": "low",
+        "reason": "Monica gently prompts Rachel to explain her sudden appearance, showing mild curiosity and a touch of humor."
+      },
+      "updated_at": "2026-06-03T07:30:48.640641+00:00"
+    },
+    "50": {
+      "xy_label": {
+        "emotions": [
+          "relief",
+          "fear"
+        ],
+        "intensities": [
+          "medium",
+          "high"
+        ],
+        "emotion": "relief",
+        "intensity": "medium",
+        "reason": "rachel 在自己的婚礼上突然意识到自己并不爱自己的未婚夫，这件事让她感到极度恐惧，她仓皇出逃，并且终于找到了朋友 monica，此时rachel才终于有些放松下来。"
+      },
+      "updated_at": "2026-06-03T07:47:05.806816+00:00"
+    },
+    "130": {
+      "xy_label": {
+        "emotions": [
+          "sadness",
+          "interest"
+        ],
+        "intensities": [
+          "low",
+          "low"
+        ],
+        "emotion": "sadness",
+        "intensity": "low",
+        "reason": "Monica empathizes with Paul's story by relating it to her brother's breakup, showing mild sadness for her brother's state and expressing interest in how Paul overcame a similar situation."
+      },
+      "updated_at": "2026-06-03T07:55:52.795251+00:00"
+    },
+    "128": {
+      "xy_label": {
+        "emotions": [
+          "surprise"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "surprise",
+        "intensity": "medium",
+        "reason": "Monica's exclamation during her date with Paul suggests a sudden, unexpected reaction, consistent with surprise."
+      },
+      "updated_at": "2026-06-03T07:55:59.242556+00:00"
+    },
+    "131": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Paul is suggesting a deliberately destructive act toward his ex, saying it in a casual, almost humorous tone."
+      },
+      "updated_at": "2026-06-03T07:59:22.663647+00:00"
+    },
+    "132": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "She makes a playful, darkly humorous guess to complete Paul's sentence, showing mild amusement and engagement in the banter."
+      },
+      "updated_at": "2026-06-03T07:59:44.427278+00:00"
+    },
+    "133": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "happiness",
+        "intensity": "medium",
+        "reason": "Paul is amused by Monica's joke and responds with a light-hearted quip, indicating enjoyment of the playful banter."
+      },
+      "updated_at": "2026-06-03T07:59:58.870587+00:00"
+    },
+    "134": {
+      "xy_label": {
+        "emotions": [
+          "surprise",
+          "interest"
+        ],
+        "intensities": [
+          "medium",
+          "low"
+        ],
+        "emotion": "surprise",
+        "intensity": "medium",
+        "reason": "Monica is surprised that Paul broke his ex's watch, as indicated by 'You actually broke her watch? Wow!', and shows interest by engaging further and sharing her own tamer story."
+      },
+      "updated_at": "2026-06-03T08:01:08.431922+00:00"
+    },
+    "137": {
+      "xy_label": {
+        "emotions": [
+          "guilt",
+          "sadness"
+        ],
+        "intensities": [
+          "medium",
+          "medium"
+        ],
+        "emotion": "guilt",
+        "intensity": "medium",
+        "reason": "Rachel repeatedly apologizes to Barry, acknowledges her role in hurting him, expresses confusion about her own identity, and pleads for a chance, indicating guilt and sadness."
+      },
+      "updated_at": "2026-06-03T08:01:32.274295+00:00"
+    },
+    "209": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "rachel 准备找工作，她准备面对新的生活，而不是和 barry 结婚，这种从原本自己不愿接受的生活中逃离并重获新生的感觉是令她愉悦的。"
+      },
+      "updated_at": "2026-06-03T08:06:00.952600+00:00"
+    },
+    "210": {
+      "xy_label": {
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "interest",
+        "intensity": "low",
+        "reason": "Monica asks for clarification about why Rachel needs luck, showing mild curiosity."
+      },
+      "updated_at": "2026-06-03T08:06:48.898756+00:00"
+    },
+    "211": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Rachel is optimistically expressing her intent to get a job, showing a light-hearted, hopeful mood after deciding to be independent."
+      },
+      "updated_at": "2026-06-03T08:07:19.383270+00:00"
+    },
+    "273": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "high",
+        "reason": "Ross admits a vulnerable personal secret from high school, feeling a bit shy and awkward."
+      },
+      "updated_at": "2026-06-03T08:10:56.751273+00:00"
+    },
+    "274": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Rachel responds with a simple, matter-of-fact acknowledgment of Ross's confession, showing no strong emotion."
+      },
+      "updated_at": "2026-06-03T08:11:05.418035+00:00"
+    },
+    "275": {
+      "xy_label": {
+        "emotions": [
+          "surprise",
+          "sadness"
+        ],
+        "intensities": [
+          "medium",
+          "low"
+        ],
+        "emotion": "surprise",
+        "intensity": "medium",
+        "reason": "Ross is surprised Rachel knew about his high school crush, and his statement reveals disappointment that she viewed him as a geek."
+      },
+      "updated_at": "2026-06-03T08:11:28.363284+00:00"
+    },
+    "276": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Matter-of-fact confirmation with no strong emotion; a playful but casual admission that she did view Ross as a geeky older brother."
+      },
+      "updated_at": "2026-06-03T08:11:38.441543+00:00"
+    },
+    "277": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "high",
+        "reason": "Ross feels vulnerable and self-conscious while asking Rachel out, explicitly mentioning his intense vulnerability."
+      },
+      "updated_at": "2026-06-03T08:11:53.216859+00:00"
+    },
+    "278": {
+      "xy_label": {
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "interest",
+        "intensity": "low",
+        "reason": "Rachel's tentative 'Yeah, maybe...' indicates she is open to Ross's invitation but forms a cautious, non-committal response, reflecting mild interest rather than strong enthusiasm."
+      },
+      "updated_at": "2026-06-03T08:13:20.103723+00:00"
+    },
+    "279": {
+      "xy_label": {
+        "emotions": [
+          "happiness",
+          "relief"
+        ],
+        "intensities": [
+          "medium",
+          "medium"
+        ],
+        "emotion": "happiness",
+        "intensity": "medium",
+        "reason": "Ross is relived and cautiously optimistic that Rachel responded with 'maybe' to his vulnerable request for a date."
+      },
+      "updated_at": "2026-06-03T08:14:03.688564+00:00"
+    },
+    "51": {
+      "xy_label": {
+        "emotions": [
+          "contempt"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "contempt",
+        "intensity": "low",
+        "reason": "Monica points out that Rachel didn't invite her to the wedding, highlighting the irony and expressing mild disdain for Rachel's thoughtless behavior."
+      },
+      "updated_at": "2026-06-03T09:05:58.293080+00:00"
+    },
+    "52": {
+      "xy_label": {
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "embarrassment",
+        "intensity": "low",
+        "reason": "Feeling awkward that Monica pointed out she wasn't invited to the wedding, which Rachel had hoped to avoid."
+      },
+      "updated_at": "2026-06-03T09:06:05.208194+00:00"
+    },
+    "53": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Monica is casually guessing the plot of a TV show, showing no strong emotion."
+      },
+      "updated_at": "2026-06-03T09:06:32.216425+00:00"
+    },
+    "54": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Chandler is casually mocking the soap opera by imitating its characters, without displaying a distinct personal emotion; his delivery is playful but effectively neutral."
+      },
+      "updated_at": "2026-06-03T09:06:39.270001+00:00"
+    },
+    "55": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Ross is casually joking along with the group while watching TV, delivering the line in a playful deep voice without any strong emotional display."
+      },
+      "updated_at": "2026-06-03T09:06:55.745467+00:00"
+    },
+    "56": {
+      "xy_label": {
+        "emotions": [
+          "guilt",
+          "anger"
+        ],
+        "intensities": [
+          "medium",
+          "medium"
+        ],
+        "emotion": "guilt",
+        "intensity": "medium",
+        "reason": "She apologizes for not marrying Barry, showing guilt, and defensively insists her feelings matter, showing anger at being dismissed."
+      },
+      "updated_at": "2026-06-03T09:07:17.768793+00:00"
+    },
+    "57": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Phoebe delivers a deadpan, quirky joke about the TV scene without displaying personal emotion."
+      },
+      "updated_at": "2026-06-03T09:09:16.343315+00:00"
+    },
+    "58": {
+      "xy_label": {
+        "emotions": [
+          "contempt"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "contempt",
+        "intensity": "low",
+        "reason": "Chandler makes a mildly mocking, critical comment about a character's outfit on the TV show, indicating low-level contempt."
+      },
+      "updated_at": "2026-06-03T09:10:01.871686+00:00"
+    },
+    "59": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Joey makes a casual, joking comment about the TV show they are watching, showing no strong emotion."
+      },
+      "updated_at": "2026-06-03T09:10:09.806519+00:00"
+    },
+    "60": {
+      "xy_label": {
+        "emotions": [
+          "happiness",
+          "interest"
+        ],
+        "intensities": [
+          "medium",
+          "medium"
+        ],
+        "emotion": "happiness",
+        "intensity": "medium",
+        "reason": "They are enthusiastically cheering for a character on TV to be pushed down the stairs, showing amusement and engagement."
+      },
+      "updated_at": "2026-06-03T09:10:19.300062+00:00"
+    },
+    "61": {
+      "xy_label": {
+        "emotions": [
+          "anger"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "anger",
+        "intensity": "low",
+        "reason": "Rachel is frustrated and trying to get her father to understand her decision, showing mild irritation in her plea."
+      },
+      "updated_at": "2026-06-03T09:10:30.446264+00:00"
+    },
+    "62": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Ross makes a dry, humorous observation about Rachel's confusing metaphor, showing no strong emotion beyond mild, detached commentary."
+      },
+      "updated_at": "2026-06-03T09:10:47.716733+00:00"
+    },
+    "63": {
+      "xy_label": {
+        "emotions": [
+          "anger"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "anger",
+        "intensity": "low",
+        "reason": "Rachel is frustrated with her father's lack of understanding and asserts her independence"
+      },
+      "updated_at": "2026-06-03T09:11:15.195081+00:00"
+    },
+    "64": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Monica makes a dry, matter-of-fact observation after Rachel announces she'll stay with her, without asking. There is no strong emotional display, just a resigned acknowledgment of the situation."
+      },
+      "updated_at": "2026-06-03T09:11:40.066381+00:00"
+    },
+    "65": {
+      "xy_label": {
+        "emotions": [
+          "fear"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "emotion": "fear",
+        "intensity": "high",
+        "reason": "Rachel asserts independence but then panics and backtracks, fearing her father will cut off her financial support, as shown by her desperate 'Wait!!'."
+      },
+      "updated_at": "2026-06-03T09:11:54.604555+00:00"
+    },
+    "66": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Monica is gently coaching Rachel through her panic attack"
+      },
+      "updated_at": "2026-06-03T09:16:18.432212+00:00"
+    },
+    "67": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Phoebe is singing a gentle, improvised song to help Rachel calm down"
+      },
+      "updated_at": "2026-06-03T09:17:02.676924+00:00"
+    },
+    "68": {
+      "xy_label": {
+        "emotions": [
+          "relief"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "relief",
+        "intensity": "medium",
+        "reason": "After a panic attack over her newfound independence, Rachel feels the anxiety subside, leading to a sense of relief."
+      },
+      "updated_at": "2026-06-03T09:17:26.978989+00:00"
+    },
+    "69": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "happiness",
+        "intensity": "medium",
+        "reason": "Phoebe is pleased that her singing helped calm Rachel down, and she expresses cheerful self-satisfaction."
+      },
+      "updated_at": "2026-06-03T09:17:36.305394+00:00"
+    },
+    "70": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Monica delivers a light-hearted, encouraging reassurance, showing mild amusement with the callback to the 'hat' metaphor."
+      },
+      "updated_at": "2026-06-03T09:18:29.185893+00:00"
+    },
+    "71": {
+      "xy_label": {
+        "emotions": [
+          "happiness",
+          "interest"
+        ],
+        "intensities": [
+          "low",
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Joey offers support in a cheerful manner while also subtly expressing romantic interest with a flirtatious remark."
+      },
+      "updated_at": "2026-06-03T09:18:56.068065+00:00"
+    },
+    "72": {
+      "xy_label": {
+        "emotions": [
+          "anger"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "anger",
+        "intensity": "medium",
+        "reason": "Monica is annoyed at Joey for hitting on Rachel right after she left her fiancé, and she firmly tells him to stop."
+      },
+      "updated_at": "2026-06-03T09:19:04.483382+00:00"
+    },
+    "73": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Joey 对 monica 的话表达了自己的反对意见，但并没有太多情绪"
+      },
+      "updated_at": "2026-06-03T09:20:54.088815+00:00"
+    },
+    "74": {
+      "xy_label": {
+        "emotions": [
+          "disgust"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "disgust",
+        "intensity": "low",
+        "reason": "Chandler reacts to the loud, unpleasant door buzzer with mild aversion."
+      },
+      "updated_at": "2026-06-03T09:21:42.770228+00:00"
+    },
+    "75": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Paul is simply identifying himself over the intercom; the hesitation does not convey a clear emotion."
+      },
+      "updated_at": "2026-06-03T09:21:51.816009+00:00"
+    },
+    "76": {
+      "xy_label": {
+        "emotions": [
+          "surprise"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "surprise",
+        "intensity": "medium",
+        "reason": "Monica is suddenly reminded of the time and expresses surprise that Paul is already there, with 'Oh God' indicating a mild fluster."
+      },
+      "updated_at": "2026-06-03T09:22:08.130085+00:00"
+    },
+    "77": {
+      "xy_label": {
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "interest",
+        "intensity": "low",
+        "reason": "Joey is simply asking for information about Paul's identity, showing mild curiosity."
+      },
+      "updated_at": "2026-06-03T09:22:17.205964+00:00"
+    },
+    "78": {
+      "xy_label": {
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "interest",
+        "intensity": "low",
+        "reason": "Ross is simply seeking confirmation about Paul's identity, with mild curiosity"
+      },
+      "updated_at": "2026-06-03T09:23:06.572642+00:00"
+    },
+    "79": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Monica is coyly acknowledging that Paul is the wine guy she's dating, with a hint of pleased anticipation."
+      },
+      "updated_at": "2026-06-03T09:23:30.751362+00:00"
+    },
+    "80": {
+      "xy_label": {
+        "emotions": [
+          "surprise",
+          "happiness"
+        ],
+        "intensities": [
+          "medium",
+          "low"
+        ],
+        "emotion": "surprise",
+        "intensity": "medium",
+        "reason": "Joey realizes Monica's 'not a real date' is with Paul the Wine Guy, seeing through her earlier evasion; he is amused and surprised."
+      },
+      "updated_at": "2026-06-03T09:23:50.114690+00:00"
+    },
+    "81": {
+      "xy_label": {
+        "emotions": [
+          "surprise",
+          "happiness"
+        ],
+        "intensities": [
+          "medium",
+          "low"
+        ],
+        "emotion": "surprise",
+        "intensity": "medium",
+        "reason": "Ross is pleasantly surprised to learn that Paul, whom Monica has been interested in, has finally asked her out."
+      },
+      "updated_at": "2026-06-03T09:23:58.646167+00:00"
+    },
+    "82": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "happiness",
+        "intensity": "medium",
+        "reason": "Monica is excited that Paul finally asked her out; she stops pretending and admits it with pleasure."
+      },
+      "updated_at": "2026-06-03T09:24:04.444439+00:00"
+    },
+    "83": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "Chandler is playfully teasing Monica, deriving amusement from her excitement, with a sarcastic remark that indicates mild enjoyment."
+      },
+      "updated_at": "2026-06-03T09:24:36.254233+00:00"
+    },
+    "84": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "sadness",
+        "intensity": "low",
+        "reason": "Monica offers to cancel her eagerly anticipated date with Paul for Rachel's sake, but she is reluctant and feels a mild disappointment at the thought of giving it up."
+      },
+      "updated_at": "2026-06-03T09:25:06.245200+00:00"
+    },
+    "85": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Rachel is reassuring Monica that she is fine and should go on her date, showing no strong emotion."
+      },
+      "updated_at": "2026-06-03T09:25:34.092024+00:00"
+    },
+    "86": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Monica is checking on Ross, who is upset after his wife left him, showing gentle concern and offering to cancel her date if he needs her."
+      },
+      "updated_at": "2026-06-03T09:26:19.465261+00:00"
+    },
+    "87": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "sadness",
+        "intensity": "medium",
+        "reason": "Ross is still reeling from his wife leaving him; Monica's offer provides comfort, but his choked voice reveals underlying sadness."
+      },
+      "updated_at": "2026-06-03T09:26:40.001073+00:00"
+    },
+    "88": {
+      "xy_label": {
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "sadness",
+        "intensity": "medium",
+        "reason": "Monica 其实希望 ross 能够说他并不需要自己留下来，因此又问了一遍。monica 如果失去和 paul 的约会机会，她会很伤心。"
+      },
+      "updated_at": "2026-06-03T09:28:02.730750+00:00"
+    },
+    "89": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "happiness",
+        "intensity": "medium",
+        "reason": "Ross 为 monica 终于被 paul 约出去约会感到高兴，刚才说自己需要她留下来只是高兴之余逗逗她。"
+      },
+      "updated_at": "2026-06-03T09:28:59.020357+00:00"
+    },
+    "90": {
+      "xy_label": {
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "interest",
+        "intensity": "low",
+        "reason": "Phoebe is curious about the nickname 'Paul the Wine Guy' and playfully asks for clarification, suggesting possible meanings. Her tone is light and inquisitive."
+      },
+      "updated_at": "2026-06-03T09:29:46.081976+00:00"
+    },
+    "91": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "emotion": "happiness",
+        "intensity": "medium",
+        "reason": "Monica is eagerly greeting Paul the Wine Guy, her date, showing clear positive excitement, though slightly flustered by the group introduction."
+      },
+      "updated_at": "2026-06-03T09:29:57.621984+00:00"
+    },
+    "92": {
+      "xy_label": {
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "emotion": "happiness",
+        "intensity": "low",
+        "reason": "The group greets Paul with cheerful enthusiasm, showing happiness and warmth upon meeting Monica's date."
+      },
+      "updated_at": "2026-06-03T09:30:24.093350+00:00"
+    },
+    "93": {
+      "xy_label": {
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "emotion": "neutral",
+        "intensity": "none",
+        "reason": "Chandler is being sarcastic; he clearly knows Paul's name after everyone just greeted him. He is making a dry joke without overt personal amusement."
+      },
+      "updated_at": "2026-06-03T09:30:32.447976+00:00"
+    }
+  }
+}

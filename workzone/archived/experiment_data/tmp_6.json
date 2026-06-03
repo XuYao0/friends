@@ -1,0 +1,802 @@
+{
+  "metadata": {
+    "season": 1,
+    "episode": 1,
+    "model": "deepseek-v4-pro",
+    "base_url": "https://api.deepseek.com",
+    "records": "screenplays/converted_chunks/cleaned/friends_records.jsonl",
+    "descriptions": "screenplays/converted_chunks/episode_descriptions.jsonl",
+    "created_at": "2026-06-02T09:16:17.241636+00:00",
+    "request_strategy": "For utterance n, send the fixed instruction, episode synopsis, and utterances 1..n; the newest utterance is appended at the end for cache locality."
+  },
+  "episode_description": "After leaving her fiancé, Barry, at the altar, Rachel (Jennifer Aniston) finds herself in Central Perk Café, soaking wet in her wedding dress, looking for her old friend Monica (Courteney Cox). Rachel ends up moving into Monica's New York apartment. Chandler (Matthew Perry) and Joey (Matt LeBlanc), who live across the hall from Monica, console Monica's older brother, Ross (David Schwimmer), whose wife, Carol, has just left him for a woman; Rachel's reappearance revives Ross' crush on her, which dates back to high school. Monica falls for Paul \"the wine guy,\" (John Allen Nelson) only to be crushed to learn that he lied about a bad breakup to have a one-night stand with her. The gang urges Rachel to be more independent by cutting up her father's credit cards; Rachel, who has never worked before, subsequently gets a job as a waitress at Central Perk.",
+  "results": [
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 1,
+        "global_utterance_id": 1,
+        "speaker": "Monica",
+        "utterance": "There's nothing to tell! He's just some guy I work with!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 1,
+        "speaker": "Monica",
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Monica lightly deflects her friends' teasing about a guy from work, showing mild embarrassment."
+      },
+      "cot": "We are asked to label the emotion of the final utterance in the transcript. The final line is Monica saying: \"There's nothing to tell! He's just some guy I work with!\"\n\nWe need to infer Monica's emotion at that moment. The transcript shows only this single line, with no prior context except that it's the first line of the episode. The description says: Scene: Central Perk, Chandler, Joey, Phoebe, and Monica are there. So Monica is in a coffee shop with friends. She says \"There's nothing to tell! He's just some guy I work with!\" This sounds like she's deflecting or downplaying something, possibly about a man she mentioned. Given the episode synopsis, Monica later falls for Paul \"the wine guy,\" but this line is at the very beginning. It's likely that the friends were teasing her or asking about a guy she mentioned, and she's reacting dismissively. The exclamation \"There's nothing to tell!\" suggests she might be slightly defensive or embarrassed. She might be feeling a bit flustered, maybe a mix of embarrassment and slight irritation. But it's not strong anger; more like a playful or light-hearted denial among friends. The intensity is probably low. Could be embarrassment because they are implying something about her and a guy, and she wants to shut it down. Or it could be neutral if she's just matter-of-fact, but the exclamation mark suggests some emotion.\n\nLooking at the emotion labels: embarrassment fits: \"轻度社交失误、失态、被撞见、私人信息暴露或场面不合适引发的不适.\" Here, her friends are prying, and she's trying to hide something or downplay it, which might cause mild embarrassment. Alternatively, it could be a bit of contempt if she thinks the guy is not worth discussing, but she says \"He's just some guy I work with!\" which is dismissive, so maybe contempt. However, contempt is \"对对象产生贬低性评价，认为其愚蠢、低劣、不值得尊重或可笑.\" That seems too strong. She's not necessarily expressing contempt for the guy, just downplaying any significance. More likely it's a defensive reaction, which could be embarrassment or even a hint of anger if she's annoyed at being teased. But anger is probably too strong. I'll go with embarrassment at low intensity. Also, she might be feeling a bit of happiness or amusement? No, she seems to be denying something, so not happy. Surprise? She's not surprised; she's reacting to a question. Neutral? But she's using an exclamation, so it's not neutral.\n\nThus, I'll label it as \"embarrassment\" with intensity \"low\". The reason: Monica is deflecting her friends' questions about a guy she works with, suggesting mild embarrassment at being the subject of teasing.\n\nI need to output JSON: {\"utterance_id\": 1, \"speaker\": \"Monica\", \"emotions\": [\"embarrassment\"], \"intensities\": [\"low\"], \"reason\": \"Monica lightly deflects her friends' teasing about a guy from work, showing mild embarrassment.\"}\n\nI'll output that.",
+      "usage": {
+        "prompt_tokens": 1184,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 32,
+        "completion_tokens": 711,
+        "total_tokens": 1895,
+        "reasoning_tokens": 653
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 2,
+        "global_utterance_id": 2,
+        "speaker": "Joey",
+        "utterance": "C'mon, you're going out with the guy! There's gotta be something wrong with him!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 2,
+        "speaker": "Joey",
+        "emotions": [
+          "happiness",
+          "contempt"
+        ],
+        "intensities": [
+          "low",
+          "low"
+        ],
+        "reason": "Joey is teasing Monica, expressing mild amusement and playful contempt toward her date."
+      },
+      "cot": "We are asked to label the emotion of Joey's utterance: \"C'mon, you're going out with the guy! There's gotta be something wrong with him!\" Context: Monica says \"There's nothing to tell! He's just some guy I work with!\" Joey is pushing back, implying that there must be something wrong with him if Monica is going out with him. This is typical Joey teasing: he's suggesting that Monica has high standards or that any guy she dates must have some flaw. The emotion here is likely playful, mocking, or teasing. But we need to pick from the given emotion labels. Joey is not angry, not disgusted, not fearful, not sad. He might be showing interest (curious about the guy), but more accurately, he's engaging in light-hearted banter. The line is delivered with a teasing tone. In the list, \"contempt\" could fit because he's making a derogatory assumption about the guy (implying there's something wrong with him). But it's not deeply contemptuous; it's more like friendly ribbing. \"happiness\" might be present because he's enjoying the teasing, but the emotion is directed at the situation. Alternatively, \"neutral\" might be considered if we think it's just a casual remark, but it's clearly emotive. Let's see if there's an emotion that captures playful teasing. \"interest\" could be there: he's interested in finding out what's wrong with the guy. But the statement \"There's gotta be something wrong with him!\" is not just curiosity; it's a playful assertion. The best fit might be \"contempt\" (light contempt towards the unknown guy) with low intensity, and possibly \"happiness\" because he's amused. But we need to choose one or two emotions with aligned intensities. The rules say: \"If you find two or more emotions labels are hard to distinguish, you can label them all. But BE CAREFUL about this skill.\" So we could combine. However, the primary emotion is a teasing one, which often involves a mix of amusement and mild contempt. But let's analyze: Joey's inner state: he is trying to be funny, to get a reaction from Monica. He's not truly contemptuous of the guy; he's using hyperbole for comedic effect. So the emotion is more about amusement. But \"happiness\" is too broad. Actually, Joey is showing \"interest\" in the gossip, wanting to know more. But the line is more of a prodding than a sincere inquiry. The phrase \"C'mon\" indicates he's pushing back, and the second part is a logical but playful conclusion. I think a good label would be \"interest\" with medium intensity, because he's eagerly trying to get Monica to spill details. But the statement about \"something wrong with him\" is more of a joking guess. Alternatively, \"surprise\" might be relevant? No, he's not surprised; he expected there to be something. Let's think of the list: \"contempt\" seems closest to the mocking tone. But maybe \"neutral\" is safe? However, it's a sitcom, and the line is meant to be funny, so it's not neutral. The speaker (Joey) is likely feeling playful and amused. In many emotion annotation schemes, teasing would be labeled as \"happiness\" or \"amusement.\" Since \"happiness\" is on the list, I'll go with that, but it might miss the teasing edge. Alternatively, \"contentment\" could be a low-key amusement, but he's not particularly content; he's actively engaging. I'll label it as \"happiness\" with medium intensity. But let's see if there's a better fit: \"surprise\" doesn't fit. \"anger\" no. \"disgust\" no. \"fear\" no. \"sadness\" no. \"relief\" no. \"shame\" no. \"guilt\" no. \"embarrassment\" no. So either \"happiness\", \"interest\", or \"contempt\". Contempt is defined as \"贬低性评价\" which fits the statement \"there's gotta be something wrong with him\" – that is a degrading assessment. However, it's not genuinely held contempt; it's a joke. But the speaker might still be experiencing mild contempt in the sense of looking down on the guy for comedic effect. Given that, I think a low intensity \"contempt\" plus \"happiness\" could work. But we must align intensities. So if I choose two emotions: [\"happiness\", \"contempt\"] with intensities [\"low\", \"low\"] because it's not intense. But the rules say \"intensities must align one-to-one with emotions,\" so two emotions require two intensities. I'll do that. But I should be careful: is it really contempt? The definition says: \"认为其愚蠢、低劣、不值得尊重或可笑.\" Joey is implying the guy is somehow flawed, which fits. And it's low because it's not strong. Happiness is also low because he's mildly amused. So I'll go with: emotions: [\"happiness\", \"contempt\"], intensities: [\"low\", \"low\"]. Reason: Joey is teasing Monica, suggesting there must be something wrong with her date, which shows light amusement and mild contempt towards the unknown guy. This keeps it concise. Now output the JSON.",
+      "usage": {
+        "prompt_tokens": 1215,
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 447,
+        "completion_tokens": 1174,
+        "total_tokens": 2389,
+        "reasoning_tokens": 1113
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 3,
+        "global_utterance_id": 3,
+        "speaker": "Chandler",
+        "utterance": "All right Joey, be nice. So does he have a hump? A hump and a hairpiece?",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 3,
+        "speaker": "Chandler",
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler is amused and playfully teasing Monica with a ridiculous question."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: Chandler says \"All right Joey, be nice. So does he have a hump? A hump and a hairpiece?\".\n\nContext: Monica is defensive about a guy she's going out with (Paul). Joey is pressing for something wrong with him. Chandler initially tells Joey to be nice, then immediately teases Monica with a ridiculous question. This is a humorous line from Chandler, typical of his sarcastic humor. The question is absurd, playing along with Joey's teasing but in a more playful way. Chandler doesn't seem angry or disgusted. His inner state is likely amusement, but he's not personally laughing; he's delivering a joke. The speaker's current inner state: Chandler is enjoying the banter, making a witty remark. He might feel a bit of mischievous glee, but the dominant emotion could be interest/amusement. Since the emotion labels include happiness, contentment, interest, etc. The act of making a joke can indicate happiness (amusement) or just neutral delivery. But from the speaker's perspective, he is likely amused and aims to tease. Given it's a comedic line, the speaker might feel amusement (happiness), but also perhaps some contempt? Not really contempt, it's light teasing. I'd say happiness at a low or medium intensity. Alternatively, interest in the conversation? But the question is not seeking information seriously; it's a joke. So I'd lean toward happiness (positive emotion from humor) and low intensity because it's a casual remark. Also, could be neutral if we consider it just a filler, but Chandler's lines are often sarcastic and he enjoys saying them. I think happiness low is appropriate. But check: \"happiness\" is general positive emotion. He's not laughing out loud, but he's smiling internally. Intensity low seems fine.\n\nWe must output JSON. Emotions list can have multiple, but here likely one. Reason concise. So: {\"utterance_id\": 3, \"speaker\": \"Chandler\", \"emotions\": [\"happiness\"], \"intensities\": [\"low\"], \"reason\": \"Chandler delivers a playful tease, showing amusement.\"} But is it happiness? Could also be interest because he's engaging in banter? Distinction: If he's purely reacting to the situation with a joke, it's more happiness (amusement). Interest would be if he wanted to know something. He doesn't care about the answer; it's a joke. So happiness is better. If we think neutral, but his tone is not flat; he's being funny. In the show, Chandler often delivers such lines with a smirk. So happiness low.\n\nBut also, the line \"All right Joey, be nice\" might have a slightly reproachful tone, but then he joins in. Overall, it's teasing, so the dominant emotion is amusement. So I'll go with happiness low.",
+      "usage": {
+        "prompt_tokens": 1244,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 92,
+        "completion_tokens": 653,
+        "total_tokens": 1897,
+        "reasoning_tokens": 601
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 4,
+        "global_utterance_id": 4,
+        "speaker": "Phoebe",
+        "utterance": "Wait, does he eat chalk?",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 4,
+        "speaker": "Phoebe",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Phoebe asks out of curiosity about a potential odd habit."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: \"Wait, does he eat chalk?\" by Phoebe. The context is that Monica says there's nothing to tell about a guy she's going out with. Joey insists there must be something wrong with him. Chandler suggests a hump and a hairpiece. Then Phoebe asks, \"Wait, does he eat chalk?\"\n\nPhoebe's line seems like a quirky, unexpected question. She is asking if the guy eats chalk, which is a bizarre thing to ask. The tone likely reflects curiosity or amusement, but from Phoebe's perspective, she might genuinely be wondering about this odd behavior. Phoebe is known for her eccentricities. So, she might be expressing interest in the possibility of a strange habit. There's no anger, disgust, fear, sadness, etc. It's a neutral question with a slight interest. The emotion could be \"interest\" because she is inquiring about a behavior, but it's very mild. Possibly neutral if just a casual remark. However, given the context, she seems to be playing along with the idea of finding something wrong with Monica's date, so she's proposing another strange thing. She might be amused herself? But the utterance is a question, so it's seeking information. I'd say it's closer to \"interest\" because she wants to know if he does that. Intensity: low. Or neutral. Let's think: In the show, Phoebe often says such lines with a straight face and a curious tone. I'd label it as interest, low intensity. But careful: the instruction says \"For short clarification questions, use interest when the speaker mainly seeks information; use surprise only when the utterance reacts to something unexpected or logically strange.\" Here, she is not reacting to something unexpected; she is proposing a possibility. So interest is appropriate. But is she genuinely seeking information? She might be just joking. In sitcoms, lines like this are often for humor, but we must label the speaker's emotion. Phoebe might be feeling curious or playful. I'd go with interest.\n\nAlso, neutral is possible if it's just a casual remark without strong emotion. But given the unusual nature of the question, interest seems more fitting. So: emotions: [\"interest\"], intensities: [\"low\"]. Reason: \"Phoebe asks out of curiosity about a potential odd habit.\" That's concise.\n\nThus, JSON: {\"utterance_id\": 4, \"speaker\": \"Phoebe\", \"emotions\": [\"interest\"], \"intensities\": [\"low\"], \"reason\": \"Phoebe asks out of curiosity about a potential odd habit.\"}",
+      "usage": {
+        "prompt_tokens": 1240,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 88,
+        "completion_tokens": 587,
+        "total_tokens": 1827,
+        "reasoning_tokens": 538
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 5,
+        "global_utterance_id": 5,
+        "speaker": "Phoebe",
+        "utterance": "Just, 'cause, I don't want her to go through what I went through with Carl- oh!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 5,
+        "speaker": "Phoebe",
+        "emotions": [
+          "disgust",
+          "surprise"
+        ],
+        "intensities": [
+          "medium",
+          "low"
+        ],
+        "reason": "Phoebe recalls her unpleasant experience with Carl (who ate chalk) and reacts with disgust at the memory and mild surprise at its sudden recollection."
+      },
+      "cot": "We are given the final target utterance: Phoebe says: \"Just, 'cause, I don't want her to go through what I went through with Carl- oh!\"\n\nWe need to label the emotion of this utterance. The speaker is Phoebe. The context: The group is teasing Monica about a guy she's going out with. Chandler jokes about a hump and hairpiece, then Phoebe asks \"Wait, does he eat chalk?\" They all stare, bemused. Then Phoebe says this line. \n\nThe line seems to be Phoebe explaining why she asked that odd question: she doesn't want Monica to go through what she went through with Carl. The \"oh!\" at the end might indicate a sudden realization or a recollection of something unpleasant, or perhaps she just remembers something. But looking at the scene, it's a comedic moment. Phoebe is known for quirky, offbeat remarks. The previous utterance was her asking \"Wait, does he eat chalk?\" which is a strange question. Now she's explaining herself: she had a bad experience with a guy named Carl who maybe ate chalk? That's absurd. The \"oh!\" could be a sudden memory of that traumatic or weird experience. \n\nEmotion: She might be feeling concerned or worried for Monica, but also recalling her own past pain. But the overall tone is comedic. She might be expressing a mix of concern and surprise at her own memory. However, we need to be precise. The prompt says: \"Do not over-interpret jokes, filler lines, brief confirmations, or casual narration.\" and \"Distinguish the speaker's current feeling from the audience's amusement.\" So we focus on Phoebe's emotion. She says she doesn't want Monica to go through what she went through with Carl. That suggests she had a bad experience (maybe disgusting or sad). The \"oh!\" might signal her remembering something unpleasant. Could be disgust if Carl eating chalk is disgusting, or fear if it was scary, or sadness. But given the show's style, it's probably played for laughs. She might be expressing genuine concern but also the absurdity. Since it's a brief line and she's explaining, the primary emotion might be a mix of concern and perhaps a sudden recollection causing a slight disturbance. \n\nConsider: She starts with \"Just, 'cause, I don't want her to go through what I went through with Carl- oh!\" The \"oh!\" might be a realization that she's bringing up something painful or weird. It could be a mild embarrassment or a moment of discomfort. But the transcript says just before: \"They all stare, bemused.\" So they are confused by her chalk question. She then explains. The \"oh!\" might be her realizing they are all staring and she just said something weird, so she feels a bit embarrassed. Alternatively, she might be recalling the specific trauma of Carl eating chalk, which could be disgusting. \n\nGiven the context of the show, Phoebe often shares bizarre anecdotes with a straight face. Here, she might be genuinely relating a past experience with concern. The \"oh!\" could be a sudden catch in her throat as she remembers something shocking. So the emotion could be surprise (at her own memory) mixed with concern/disgust. But we must choose from the given labels.\n\nAvailable emotions: anger, disgust, fear, happiness, surprise, sadness, contentment, relief, interest, contempt, shame, guilt, embarrassment, neutral.\n\nPossible emotions:\n- Surprise: The \"oh!\" might indicate surprise. She might be surprised by the memory popping up.\n- Disgust: If Carl eating chalk was disgusting to her.\n- Sadness: If the experience was painful.\n- Concern: Not a label, but could be mapped to sadness or fear? Fear might be too strong. Perhaps sadness because she went through something bad.\n- Embarrassment: She might be embarrassed sharing this weird detail after being stared at.\n\nBut the line is: \"Just, 'cause, I don't want her to go through what I went through with Carl- oh!\" The \"oh!\" might be a sudden realization that she's about to reveal too much or that the memory is painful. It's like she interrupts herself with an exclamation. That suggests surprise or a sudden pang of emotion. Often in such sitcoms, a character says something with a sudden \"oh\" as a punchline. \n\nI think the primary emotion is surprise (the \"oh!\" is a sudden recollection) mixed with perhaps disgust or sadness regarding the memory. But since it's a brief line, the immediate emotion at the moment of speaking might be surprise at the memory, and then a bit of concern for Monica. But the line is explaining why she asked about chalk; that explanation is driven by concern: she doesn't want Monica to suffer the same fate. However, the \"oh!\" might be a separate emotion intruding. \n\nWe can label multiple emotions if they are hard to distinguish. But we must be careful. The prompt says: \"For short clarification questions, use interest when the speaker mainly seeks information; use surprise only when the utterance reacts to something unexpected or logically strange.\" This isn't a clarification question; it's a statement. \n\nLet's analyze: Phoebe's goal is to explain her weird question. She says: \"Just, 'cause, I don't want her to go through what I went through with Carl- oh!\" The dash and \"oh!\" indicate an interruption, perhaps because she's remembering the awful details. So her emotional state during this utterance: she starts with a concerned tone, then gets hit with a sudden memory that causes an exclamation. That exclamation could be disgust, surprise, or pain. Given that she says \"oh!\" which is often a reaction to something unpleasant or surprising, and the context is about a past trauma with Carl who apparently ate chalk, it's likely disgust or surprise. Also, the fact that she asked \"does he eat chalk?\" suggests she associates chalk-eating with Carl, and that was a negative experience. So she might feel disgust towards that memory. \n\nConsider the episode synopsis: no direct mention of this scene. So we rely on this context.\n\nI think a reasonable interpretation: Phoebe is expressing concern (she doesn't want Monica to go through that), but the \"oh!\" indicates a sudden emotional reaction to the memory, which could be disgust or surprise. Since the memory seems to be negative, disgust (repulsion) fits because eating chalk is disgusting. Surprise might also be present if she didn't expect the memory to hit her like that. However, the \"oh!\" sounds more like disgust: \"oh, that was awful.\" In many comedies, such a line is delivered with a grimace. \n\nAlternatively, it could be sadness: she's sad about what happened with Carl. But typically, Phoebe's past traumas are played for dark humor, so disgust is common.\n\nLet's see the intensity: The emotion is likely not high intensity; it's more of a sudden recollection, so medium probably. She's not screaming or sobbing; it's a casual conversation with a sudden \"oh!\". So low or medium. I'd go with medium for the disgust, and maybe low for concern/sadness. But we can state two emotions: disgust and surprise. However, the prompt says \"If you find two or more emotions labels are hard to distinguish, you can label them all.\" So it's okay.\n\nAlternatively, maybe it's just surprise. She's surprised by her own thought. But given the context of a disgusting habit, disgust seems more specific.\n\nI'll label: emotions: [\"disgust\", \"surprise\"], intensities: [\"medium\", \"low\"]? Actually, intensities must align one-to-one. So for each emotion, a corresponding intensity. Surprise might be low if it's just a minor startle. Disgust might be medium because she's remembering something gross.\n\nBut let's check the reason: She recalls her traumatic experience with Carl and reacts with a mixture of disgust and surprise. The concern for Monica is the reason she's speaking, but the \"oh!\" is the emotional peak. So the primary emotions are disgust and surprise at the memory.\n\nAlternatively, if we consider the entire utterance as a unit, the \"oh!\" might just be a filler. But it's explicitly written with a dash and exclamation, so it's a meaningful interruption.\n\nLet's craft the JSON: utterance_id is 5, speaker is Phoebe. \n\nReason: \"Phoebe recalls her unpleasant experience with Carl (who ate chalk) and reacts with disgust and surprise at the memory.\"\n\nEmotions: [\"disgust\", \"surprise\"], intensities: [\"medium\", \"low\"]? Or maybe both medium. If surprise is about the suddenness, it could be medium. I think surprise is often a quick high intensity? But here she's not extremely surprised; it's more like \"oh!\" So low.\n\nLet's decide: Disgust: medium (she's clearly disturbed). Surprise: low (she's momentarily taken aback).\n\nCheck rules: non-neutral emotions use low, medium, or high. Yes.\n\nWrite the JSON. Only the JSON object, no backticks or markdown.",
+      "usage": {
+        "prompt_tokens": 1291,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 139,
+        "completion_tokens": 1960,
+        "total_tokens": 3251,
+        "reasoning_tokens": 1887
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 6,
+        "global_utterance_id": 6,
+        "speaker": "Monica",
+        "utterance": "Okay, everybody relax. This is not even a date. It's just two people going out to dinner and- not having sex.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 6,
+        "speaker": "Monica",
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Monica feels awkward under her friends' teasing about her date, tries to downplay it, but her added clarification about not having sex reveals her nervousness and leads to mild embarrassment."
+      },
+      "cot": "We are asked to label the emotion of the final utterance in the transcript. The final utterance is utterance_id 6 by Monica: \"Okay, everybody relax. This is not even a date. It's just two people going out to dinner and- not having sex.\"\n\nWe need to infer Monica's inner state at the moment of speaking, considering the context.\n\nContext: Monica has mentioned she's going out with some guy from work. Her friends are teasing her and making jokes about him: Joey says there must be something wrong with him, Chandler jokes about a hump and a hairpiece, Phoebe asks if he eats chalk. Monica responds by telling everybody to relax, downplaying it as not even a date, just dinner and then adds \"not having sex\" which might be a Freudian slip or a deliberate humorous admission? Actually, the line is: \"Okay, everybody relax. This is not even a date. It's just two people going out to dinner and- not having sex.\" The \"not having sex\" is likely added after a pause, as if she catches herself and clarifies, but it ends up being ironically suggestive. Monica seems slightly flustered or defensive. She is trying to downplay the situation, but her addition of \"not having sex\" might reveal that the thought is on her mind, or she's preemptively denying something that wasn't even mentioned. The friends' teasing might be making her a bit embarrassed or defensive. She's not angry, just trying to get them to stop making a big deal out of it. So emotions could be embarrassment? Or maybe neutral with slight defensiveness? The tone is likely light and funny for the audience, but we must consider Monica's feelings. She says \"everybody relax\" in a somewhat exasperated but not angry way. She might be feeling a bit of embarrassment because they are overanalyzing her potential date, and she wants to downplay it. The slip could indicate she is a bit nervous about the idea of dating, maybe worried they'll assume she's going to have sex? So embarrassment fits: mild social discomfort. Also possibly a touch of frustration? But overall, the dominant emotion seems like embarrassment, low intensity. Could also be somewhat amused? But the line itself is not expressing amusement; she seems to be trying to shut down the teasing. So I'll go with embarrassment, low intensity. Check the labels: embarrassment is available. Intensity: low. The reason: Monica feels awkward as her friends tease her about her date, and she tries to downplay it, but inadvertently reveals her nervousness about the date possibly leading to sex, causing mild embarrassment.\n\nMake sure JSON format: {\"utterance_id\": 6, \"speaker\": \"Monica\", \"emotions\": [\"embarrassment\"], \"intensities\": [\"low\"], \"reason\": \"brief reason\"}\n\nNote: The utterance might also have a bit of defensiveness, but that's more of a behavior than an emotion. Embarrassment covers it.",
+      "usage": {
+        "prompt_tokens": 1327,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 175,
+        "completion_tokens": 687,
+        "total_tokens": 2014,
+        "reasoning_tokens": 611
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 7,
+        "global_utterance_id": 7,
+        "speaker": "Chandler",
+        "utterance": "Sounds like a date to me.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 7,
+        "speaker": "Chandler",
+        "emotions": [
+          "contempt"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler dryly points out that Monica's description of dinner without sex is exactly what a date sounds like, showing playful mockery."
+      },
+      "cot": "我们被要求标注最后一句：\"Sounds like a date to me.\" 说话者是Chandler。我们需要根据对话上下文和剧集简介来推断情绪。\n\n场景：Monica在说“There's nothing to tell! He's just some guy I work with!” 然后Joey和Chandler开玩笑问她约会对象是否有问题，Chandler说“All right Joey, be nice. So does he have a hump? A hump and a hairpiece?” Phoebe问是否吃粉笔。然后Monica说“Okay, everybody relax. This is not even a date. It's just two people going out to dinner and- not having sex.” 接着Chandler回应：“Sounds like a date to me.”\n\nChandler以幽默讽刺著称。Monica辩解这不是约会，只是吃饭而不发生性关系，Chandler的评论是在调侃她，指出她描述的实际上听起来就像约会。这是一种轻蔑或有趣的调侃，可能带有轻微的讽刺。他不是在生气或厌恶，而是用戏谑的语气。可能的情绪是“轻蔑”（contempt）吗？contempt是贬低性评价，认为对方愚蠢或可笑。这里Chandler可能觉得Monica的否认很可笑，因为她的描述正是一个约会。所以可能是contempt，但强度低。也可能是“兴趣”（interest）吗？他只是在发表评论，没什么兴趣。也可能是“快乐”（happiness）吗？因为他觉得有趣？但他是讽刺，不是单纯的快乐。注意规则：“A funny line is not happiness unless the speaker is personally amused.” 他可能被自己的笑话逗乐，但更多的是讽刺。通常Chandler的这种台词是幽默的，但情绪上可能是轻微的轻蔑。或者可以是“neutral”？但这句话显然带有情绪色彩。我们看上下文：他之前已经开过玩笑（驼背和假发），现在继续这个模式。因此，我倾向于“contempt”（轻蔑）with low intensity。也可以考虑“amusement”但不在标签中，只有happiness，但他并不是真心快乐，只是取笑。所以contempt更合适。另外，也可以考虑“embarrassment”？不，他并不尴尬。可能只是中性的评论，但“Sounds like a date to me”明显在揭穿Monica，所以不是中性。所以emotions: [\"contempt\"], intensities: [\"low\"]。理由是Chandler讽刺地指出Monica的描述正符合约会，带有调侃的轻蔑。\n\n检查是否必须单标签？规则说可以多标签如果难区分，但这里contempt最贴切。输出JSON。",
+      "usage": {
+        "prompt_tokens": 1318,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 166,
+        "completion_tokens": 590,
+        "total_tokens": 1908,
+        "reasoning_tokens": 525
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 8,
+        "global_utterance_id": 8,
+        "speaker": "Chandler",
+        "utterance": "Alright, so I'm back in high school, I'm standing in the middle of the cafeteria, and I realize I am totally naked.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 8,
+        "speaker": "Chandler",
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler initiates a humorous anecdote about a classic anxiety dream, appearing amused by the absurdity as he shares it with friends."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: utterance_id 8, speaker Chandler, utterance: \"Alright, so I'm back in high school, I'm standing in the middle of the cafeteria, and I realize I am totally naked.\"\n\nWe need to consider the context: The transcript shows a scene with the group at Central Perk. Earlier they were talking about Monica's date, and then there is a time lapse, and now Chandler is starting a new topic. He says he's back in high school, standing in the cafeteria, and realizes he's naked. This is a classic recurring dream or anxiety dream. It's often a dream about embarrassment or vulnerability. But note: Chandler is recounting a dream he had. In the show, this is a comedic moment. The audience might find it funny, but we need to label the speaker's emotion. Is Chandler feeling amused as he tells it? Or is he feeling embarrassed about the dream? From his delivery in the show (if we recall), Chandler often uses humor to deflect or as a coping mechanism. He tells the story in a casual, storytelling manner. He's not currently experiencing the dream; he's recounting it. Typically, when people tell such dreams, they might feel a mix of amusement and residual embarrassment, but often they treat it as a funny anecdote. However, the instruction says: \"When describing an event, actually the event happening now is not the described event, it's the 'describing' itself. Put yourself in the describing, feel the emotions in the describing, instead of the described event.\" So we should focus on how Chandler feels as he tells this. It seems like he's sharing a humorous story with friends. He might be amused. But is there any embarrassment? Possibly, but he's openly sharing it, so maybe not strong embarrassment. The emotion could be \"interest\" because he's engaging the group with a story? But \"interest\" is usually about being interested in something external. Here, he's the one telling. More likely, he's feeling \"amusement\" which falls under happiness. The line is delivered with a kind of deadpan humor. So I'd lean toward \"happiness\" (or possibly \"embarrassment\" if he feels embarrassed recounting it, but that's unlikely since he volunteers it). Let's check the context: there's no prior indication that he was prompted to tell this dream; it seems he just starts telling it after the time lapse. So he's initiating a story. That suggests he finds it an interesting or funny story to share. So emotions: happiness (because he's amused by the absurdity) and maybe a hint of embarrassment? But the intensity of embarrassment would be low if any. However, the instruction says: \"If the direct reading is neutral or low-intensity, keep it neutral or low unless there is clear textual or contextual evidence for a stronger emotion.\" And \"Do not over-interpret jokes, filler lines, brief confirmations, or casual narration.\" This is a casual narration of a dream. It might be neutral with a humorous intent, but the speaker himself might not be feeling a strong emotion. He's just telling a story. Could be neutral. But in the show, Chandler often uses such stories to get a reaction, and he might be amused. I think it's safe to label as happiness with low intensity. The reason: \"Chandler shares a humorous dream anecdote, seemingly amused by the absurdity.\" But let's see if any other emotions fit. Surprise? No, he's not reacting to something unexpected now. Disgust? No. Fear? No, he's not currently afraid. So happiness (amusement) seems best. Intensity: low, because it's not a strong laugh, just sharing a funny story. Could be medium? Probably low. So I'll go with [\"happiness\"], [\"low\"].",
+      "usage": {
+        "prompt_tokens": 1378,
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 226,
+        "completion_tokens": 857,
+        "total_tokens": 2235,
+        "reasoning_tokens": 793
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 9,
+        "global_utterance_id": 9,
+        "speaker": "All",
+        "utterance": "Oh, yeah. Had that dream.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 9,
+        "speaker": "All",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Casual acknowledgment of a common dream, no clear emotion expressed."
+      },
+      "cot": "We are asked to label the final utterance: {\"utterance_id\": 9, \"speaker\": \"All\", \"utterance\": \"Oh, yeah. Had that dream.\"}\n\nWe need to put ourselves in the position of the speakers (the group: Chandler, Joey, Phoebe, Monica? Actually \"All\" likely means all of them respond in unison). The utterance is a response to Chandler saying: \"Alright, so I'm back in high school, I'm standing in the middle of the cafeteria, and I realize I am totally naked.\" Then all say: \"Oh, yeah. Had that dream.\"\n\nThis is a common dream trope. The tone is likely casual, acknowledging they've had a similar dream. It doesn't convey strong emotion. It's a light, conversational remark. The emotion is likely neutral or could be mild interest (recognizing shared experience). But it's a brief acknowledgment. No strong evidence of happiness, surprise, etc. It's not an emotional outburst. So I'd label it neutral.\n\nThus: emotions: [\"neutral\"], intensities: [\"none\"], reason: \"Casual acknowledgment of a common dream, no clear emotion expressed.\"\n\nI'll output that JSON.",
+      "usage": {
+        "prompt_tokens": 1369,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 89,
+        "completion_tokens": 293,
+        "total_tokens": 1662,
+        "reasoning_tokens": 244
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 10,
+        "global_utterance_id": 10,
+        "speaker": "Chandler",
+        "utterance": "Then I look down, and I realize there's a phone... there.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 10,
+        "speaker": "Chandler",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Chandler is casually recounting a dream detail, without strong emotion."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: Chandler says: \"Then I look down, and I realize there's a phone... there.\" This is part of a dream narrative he is describing to his friends. The context: they are discussing dreams. Chandler shares that he had a dream where he was in high school cafeteria naked, and then he looks down and sees a phone... there. The others react with recognition (\"Oh, yeah. Had that dream.\"). Chandler's line is the punchline, explaining that the dream is not just about being naked in public, but also there's a phone there, which adds a humorous twist. His tone is casual storytelling, with a slight comedic emphasis on the phone detail. The immediate prior line is from \"All\" acknowledging the common dream. Chandler's line is delivered with a sense of imparting interesting information, but not strong emotion. He is sharing a personal anecdote. There is no anger, disgust, fear, etc. It's neutral storytelling with perhaps a hint of amusement at the odd detail. However, he's not laughing or showing happiness; it's more matter-of-fact with comedic timing. As the emotion labeling guide says, don't confuse the comedic function with the speaker's emotion. The speaker, Chandler, is just describing a dream. He might feel a bit of interest in sharing this weird detail, or it's just neutral conversation. So the emotion is likely neutral. If we had to choose, perhaps a low interest, but the character isn't intensely interested; he's just recounting. The instruction: \"For short clarification questions, use interest when the speaker mainly seeks information\" but here it's a statement, not a question. It's just part of his story. So I think neutral is appropriate. The reason: Chandler is casually recounting a detail from his dream, with no strong emotion. So emotions: [\"neutral\"], intensities: [\"none\"]. \n\nBut wait, the transcript says: \"Then I look down, and I realize there's a phone... there.\" The ellipsis and the word \"there\" might indicate he's trying to build suspense or highlight the absurdity. But still, it's part of a light-hearted conversation. In the show, Chandler often delivers lines with a deadpan or sarcastic tone, but here he's just telling a dream. No strong emotion. \n\nLet's see the rules: \"If the direct reading is neutral or low-intensity, keep it neutral or low unless there is clear textual or contextual evidence for a stronger emotion.\" Here, no strong evidence. So neutral.\n\nThus, JSON: {\"utterance_id\": 10, \"speaker\": \"Chandler\", \"emotions\": [\"neutral\"], \"intensities\": [\"none\"], \"reason\": \"Chandler is casually recounting a dream detail, without strong emotion.\"}",
+      "usage": {
+        "prompt_tokens": 1396,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 116,
+        "completion_tokens": 634,
+        "total_tokens": 2030,
+        "reasoning_tokens": 583
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 11,
+        "global_utterance_id": 11,
+        "speaker": "Joey",
+        "utterance": "Instead of...?",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 11,
+        "speaker": "Joey",
+        "emotions": [
+          "interest"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Joey is curiously prompting Chandler to clarify his absurd dream statement, showing mild interest."
+      },
+      "cot": "We are asked to label the emotion of the final utterance in the transcript. The final utterance is by Joey: \"Instead of...?\" We have the prior context: Chandler is describing a dream where he's naked in high school, then he looks down and sees a phone... there. Joey interrupts with \"Instead of...?\" This implies Joey is questioning what the phone is instead of, given the context of nakedness, probably hinting at a body part. Joey's tone seems curious, maybe a bit amused or leading. But we need to infer Joey's inner state. Joey is likely feeling interest (curiosity) and perhaps amusement at the absurdity. He's prodding Chandler to finish the joke. The line is short and inquisitive. The direct emotion: Joey is seeking information (what is the phone instead of?) and he's probably amused by the setup. But the primary emotion might be interest (wanting to know more) with a mix of amusement (happiness). However, the instructions say: \"For short clarification questions, use interest when the speaker mainly seeks information; use surprise only when the utterance reacts to something unexpected or logically strange.\" Here, Joey is not surprised; he's anticipating a punchline. So interest is appropriate. Could there be a mild happiness (amusement)? Possibly, but the main drive is curiosity. The intensity is low to medium. Since it's a casual conversation, I'd say low interest. But Joey might be actively engaged, so medium interest. I'll go with low or medium. Given the context, it's not a strong emotion. Also, we must avoid over-interpreting comedic function; Joey is not personally amused in a strong way, he's just prompting Chandler. So I'll label interest, intensity low. Possibly neutral? But neutral would be no emotion, but here Joey clearly shows interest in what Chandler is going to say. So interest is better. Let's confirm: Emotions: [\"interest\"], intensities: [\"low\"]. Reason: \"Joey is curiously prompting Chandler to clarify his absurd dream statement, showing mild interest.\" That fits.\n\nNow output JSON. Remember: no markdown, only JSON. The utterance_id is 11. Speaker is Joey. So: {\"utterance_id\": 11, \"speaker\": \"Joey\", \"emotions\": [\"interest\"], \"intensities\": [\"low\"], \"reason\": \"Joey is curiously prompting Chandler to clarify his absurd dream statement, showing mild interest.\"}",
+      "usage": {
+        "prompt_tokens": 1393,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 113,
+        "completion_tokens": 557,
+        "total_tokens": 1950,
+        "reasoning_tokens": 503
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 12,
+        "global_utterance_id": 12,
+        "speaker": "Chandler",
+        "utterance": "That's right.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 12,
+        "speaker": "Chandler",
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler confirms the absurd dream detail with mild amusement and satisfaction at delivering the joke."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: {\"utterance_id\": 12, \"speaker\": \"Chandler\", \"utterance\": \"That's right.\"}\n\nContext: Chandler is recounting a dream. He starts: \"Alright, so I'm back in high school, I'm standing in the middle of the cafeteria, and I realize I am totally naked.\" The others respond with recognition: \"Oh, yeah. Had that dream.\" Then Chandler adds a twist: \"Then I look down, and I realize there's a phone... there.\" Joey asks: \"Instead of...?\" Chandler says: \"That's right.\"\n\nInterpretation: Chandler is confirming Joey's implied question: that there was a phone instead of his genitals. This is a punchline to his joke. Chandler is delivering a humorous, absurd detail. The emotion is likely amusement or satisfaction at delivering a joke. But we must consider the speaker's inner state. It's a playful, humorous moment. Chandler is not necessarily feeling intense happiness, but more of a smug, amused confirmation. The line is short and confident. Possible emotions: happiness (amused), but also perhaps interest (confirming a funny twist). Could be neutral? But there's a humorous tone. Given it's a sitcom, the character is likely feeling some amusement. But note: we are labeling the speaker's emotion, not the audience's. Chandler is sharing a joke, so he might be feeling happy/content. But the utterance is just \"That's right.\" It's a confirmation. In the flow, it's a punchline confirmation. I think it's safe to label as happiness (amused) with low intensity, because it's a light, humorous moment, not a burst of laughter. Or perhaps contentment, as he's satisfied with the reaction? But happiness fits better for amusement.\n\nLet's check rules: \"A funny line is not happiness unless the speaker is personally amused.\" Chandler is personally amused by his own joke delivery? He might be. The utterance \"That's right.\" is delivered with a smug, knowing tone. So he likely feels a bit of pleasure from the humor. So happiness low. Alternatively, could be just neutral if we think it's just a confirmation. But given the comedic context, it's not purely neutral. The show's laugh track would emphasize it, but we must base on character emotion. I'd go with happiness.\n\nIntensity: low, because it's a mild amusement, not a laugh.\n\nReason: Chandler is confirming the absurd twist in his dream with amused satisfaction.\n\nThus, emotions: [\"happiness\"], intensities: [\"low\"].\n\nCheck if any other emotions: Could it be interest? No, he's not seeking information, he's providing it. Could it be contempt? No. Surprise? No, he's not surprised, he's the one delivering the twist.\n\nSo final JSON.",
+      "usage": {
+        "prompt_tokens": 1401,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 121,
+        "completion_tokens": 647,
+        "total_tokens": 2048,
+        "reasoning_tokens": 592
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 13,
+        "global_utterance_id": 13,
+        "speaker": "Joey",
+        "utterance": "Never had that dream.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 13,
+        "speaker": "Joey",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Joey is casually stating a fact about his own dream experiences without evident emotional reaction."
+      },
+      "cot": "We are asked to label the emotion of Joey's final utterance: \"Never had that dream.\" Let's analyze the context.\n\nScene: Central Perk. Chandler, Joey, Phoebe, Monica are there. They've been talking about Monica's date, then time lapse. Chandler is recounting a dream: he's back in high school, naked in the cafeteria, and then he looks down and sees a phone \"there\" (presumably near his crotch). When Chandler says \"there's a phone... there,\" Joey asks \"Instead of...?\" Chandler confirms \"That's right.\" Then Joey says \"Never had that dream.\"\n\nWe need to infer Joey's emotion at this moment. He is responding to Chandler's bizarre dream. Chandler's dream is a twist on the common anxiety dream of being naked in public, adding a phone. Joey's \"Instead of...?\" implies that the phone is replacing something else, likely genitalia. When Chandler confirms, Joey says he's never had that dream. The humor is that Joey has had the naked dream but not the phone version. His line seems to be a casual, somewhat amused or dismissive comment. He's not expressing strong emotion. It's a throwaway line. Could be interpreted as neutral, or maybe slight surprise or amusement. But he's not personally invested. He might be mildly interested or simply stating a fact. Given that it's a comedic line, the speaker might not be experiencing a strong emotion. The laughter comes from the audience, not Joey's feeling. So, I'd lean toward neutral. But let's check if there's any subtle emotion: Joey says \"Never had that dream\" in a matter-of-fact tone. There's no indication of surprise, because he's heard Chandler's dream and it's not shocking to him. It's just a statement. So emotions: neutral, intensities: none. Reason: Joey is casually stating a fact about his own dream experiences without any evident emotional reaction.",
+      "usage": {
+        "prompt_tokens": 1411,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 131,
+        "completion_tokens": 455,
+        "total_tokens": 1866,
+        "reasoning_tokens": 401
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 14,
+        "global_utterance_id": 14,
+        "speaker": "Phoebe",
+        "utterance": "No.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 14,
+        "speaker": "Phoebe",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Brief denial in a casual conversation; no strong emotion evident."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: {\"utterance_id\": 14, \"speaker\": \"Phoebe\", \"utterance\": \"No.\"}. The context is a group conversation where Chandler is recounting a dream about being naked in high school and having a phone in place of his private parts. The others all said they've had that dream (the naked dream). Chandler adds a twist: he had a phone there. Joey says \"Instead of...?\" and Chandler confirms \"That's right.\" Joey says \"Never had that dream.\" Then Phoebe says \"No.\" So Phoebe is responding to Joey's statement \"Never had that dream.\" She simply says \"No.\"\n\nWe need to infer Phoebe's emotion at that moment. The scene is light and comedic. The group is sharing dreams. Chandler's dream is odd, and Joey quips that he's never had that dream (with the phone). Phoebe's \"No.\" likely means she hasn't had that dream either, or she's agreeing with Joey that it's weird, or she's dismissing it. The tone is probably casual, maybe slightly amused or just a straightforward denial. There's no strong emotion evident. The utterance is very short: just \"No.\" It could be a neutral response. However, given the comedic context, there might be a hint of amusement or disgust at the idea? But Phoebe's character often reacts in quirky ways. But just \"No.\" doesn't convey strong emotion. It's likely neutral. The dialogue before: Joey said \"Never had that dream.\" Phoebe says \"No.\" That could be her simply stating she also hasn't had that dream. It's a brief response. No strong emotion.\n\nThus, I'll label it as neutral with intensity none.\n\nReason: Brief denial in a casual conversation; no strong emotion evident.\n\nReturn JSON: {\"utterance_id\": 14, \"speaker\": \"Phoebe\", \"emotions\": [\"neutral\"], \"intensities\": [\"none\"], \"reason\": \"Brief denial in a casual conversation; no strong emotion evident.\"}",
+      "usage": {
+        "prompt_tokens": 1415,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 135,
+        "completion_tokens": 478,
+        "total_tokens": 1893,
+        "reasoning_tokens": 429
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 15,
+        "global_utterance_id": 15,
+        "speaker": "Chandler",
+        "utterance": "All of a sudden, the phone starts to ring. Now I don't know what to do, everybody starts looking at me.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 15,
+        "speaker": "Chandler",
+        "emotions": [
+          "happiness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler is amused by recounting his absurd dream to his friends, enjoying the comedic twist."
+      },
+      "cot": "We are given the final target utterance: Chandler says \"All of a sudden, the phone starts to ring. Now I don't know what to do, everybody starts looking at me.\" This is a continuation of his dream narration. He's describing a dream where he's naked in the cafeteria and then a phone appears instead of his private parts, and it rings. The tone is humorous, but we need to label Chandler's emotion. The speaker is Chandler. He's recounting a bizarre dream to his friends. He might feel amused, embarrassed (about the dream), or simply interested in sharing. But he's describing the dream with a comedic effect. Since it's a sitcom, he's telling a funny story. However, we need to infer his inner state. The friends are listening and reacting. In the dream, he's feeling embarrassed (naked, phone ringing, everyone looking). But as he tells it, is he feeling embarrassment? He's likely feeling some mix of humor and perhaps mild embarrassment at the absurdity, but he's choosing to share it for laughs. The instruction says: \"A funny line is not happiness unless the speaker is personally amused.\" So if he's trying to be funny, he might be amused himself. He might be feeling interest in engaging his friends with the story. But let's see the context: earlier lines show they were discussing dreams. Chandler started: \"Alright, so I'm back in high school, I'm standing in the middle of the cafeteria, and I realize I am totally naked.\" Then everyone said they had that dream. Then he adds the twist: \"Then I look down, and I realize there's a phone... there.\" Joey asks \"Instead of...?\" and Chandler confirms. Joey and Phoebe say they never had that dream. Then Chandler continues: \"All of a sudden, the phone starts to ring. Now I don't know what to do, everybody starts looking at me.\" So he's elaborating on the dream. His tone is likely exaggerated for comedic effect. The emotion could be a mix of amusement (happiness) and possibly mild embarrassment from the content, but he's detached because it's a dream. He might feel contentment in sharing a laugh with friends. But the instruction says to not over-interpret. The most straightforward emotion might be interest, because he's engaged in telling the story, or happiness if he's amused. But he's not showing strong emotion; it's a casual recounting. Could be neutral. But the dream is absurd, so he might be feeling surprised by the dream himself? But he's telling it after the fact. I think it's safe to say he's feeling a mild amusement. So happiness, low intensity. Or perhaps a combination of amusement and mild embarrassment, but the embarrassment is about the dream content, not his current state. He's not actually embarrassed telling it; he's using it for humor. So I'll go with happiness low. Alternatively, could be neutral. Let's think: In the show, Chandler often uses humor as a defense mechanism, but here he's just sharing a dream. The audience might find it funny, but his emotion might be neutral. However, he does seem to be enjoying sharing it. I'll check the synopsis: no direct context. I'll label as happiness low. But we should avoid over-interpreting. Perhaps it's better to label as interest, because he's interested in telling the story. But interest is typically for seeking information. The definition: \"兴趣: 注意被对象、信息、人物或可能性吸引，并想继续了解、观察或参与。\" That fits a storyteller: he wants to continue sharing and see the reaction. So it could be interest. I think it's a blend. Since the instruction allows multiple emotions but to be careful, I'll stick to one if possible. I'll go with happiness, because he's amused by the absurdity. Intensity low. Reason: \"Chandler is amused by recounting his absurd dream to his friends, enjoying the comedic twist.\" That seems plausible. I'll output JSON.",
+      "usage": {
+        "prompt_tokens": 1469,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 189,
+        "completion_tokens": 899,
+        "total_tokens": 2368,
+        "reasoning_tokens": 835
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 16,
+        "global_utterance_id": 16,
+        "speaker": "Monica",
+        "utterance": "And they weren't looking at you before?!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 16,
+        "speaker": "Monica",
+        "emotions": [
+          "contempt",
+          "happiness"
+        ],
+        "intensities": [
+          "low",
+          "low"
+        ],
+        "reason": "Monica sarcastically points out the absurdity in Chandler's dream, expressing playful contempt and amusement."
+      },
+      "cot": "We are asked to label the emotion of Monica's utterance: \"And they weren't looking at you before?!\" in context.\n\nFirst, understand the scene: The group is chatting at Central Perk. Chandler is recounting a dream where he's naked in the high school cafeteria, then notices a phone there, and the phone starts ringing. He says \"everybody starts looking at me.\" Monica interjects with a sarcastic remark: \"And they weren't looking at you before?!\"\n\nThe context: Chandler's dream is absurd and funny. The group is sharing dream stories. Monica's line is a humorous jab at Chandler, pointing out that if he was already naked, people were already looking at him. It's a witty comeback. The tone is likely playful teasing, but also a bit sarcastic and pointing out the obvious.\n\nMonica's emotion: She's not angry or disgusted. She might be amused but the line itself is more of a pointed observation. It's delivered as a rhetorical question to highlight the absurdity. The emotion could be a mix of playful teasing and a slight contempt (轻蔑) because she's mocking the logical flaw in his story, but it's in a friendly banter context. Alternatively, it could be amusement (happiness? contentment?). Let's examine the emotion labels:\n\n- Amusement is a form of happiness, but the utterance is not a direct expression of joy; it's a sarcastic comment. The speaker might be feeling a bit of superiority (contempt) but mild. Or it could be interest? No.\n\nGiven the context of friendly ribbing, it's more like a humorous tease. Monica might be feeling amusement and a touch of contempt (playful). Contempt is defined as \"贬低性评价，认为其愚蠢、低劣、不值得尊重或可笑\" – she is pointing out the silliness, so contempt for the illogical thought. But is it strong? Not really, it's light-hearted.\n\nSurprise? Not really, she's making a point.\n\nNeutral? No, it's clearly emotionally charged in a joking way.\n\nI think the primary emotion is a mix of amusement (happiness) and contempt (mocking). Since the instructions say if two emotions are hard to distinguish, we can label both. But let's be careful: the line is a deadpan joke, so the speaker's feeling might be more of a detached amusement. In acting, the tone is likely sarcastic, with a raised eyebrow. So, contempt (轻蔑) feels appropriate because she's calling out the absurdity. But happiness? She might be enjoying the joke herself. The \"funny line is not happiness unless the speaker is personally amused\" – but she is delivering a joke, so she is likely amused, but the line itself is a rhetorical question. She might be expressing a mixture of amusement and slight contempt.\n\nConsider the intensity: It's a mild joke, so low intensity for both.\n\nAlternatively, could it be just neutral? No, the exclamation mark and the rhetorical nature indicate an emotional tone.\n\nI'll go with emotions: [\"contempt\", \"happiness\"], intensities: [\"low\", \"low\"], reason: Monica is teasing Chandler by sarcastically pointing out the flaw in his story, expressing playful contempt and amusement.\n\nBut let's check: Is there a better fit? Some might label it as surprise? No, she's not surprised.\n\nWhat about contentment? No.\n\nI'll stick with contempt and happiness.\n\nNow the JSON output: Only the JSON, no other text.\n\nSo: \n{\n  \"utterance_id\": 16,\n  \"speaker\": \"Monica\",\n  \"emotions\": [\"contempt\", \"happiness\"],\n  \"intensities\": [\"low\", \"low\"],\n  \"reason\": \"Monica sarcastically mocks Chandler's story, expressing light contempt for its illogic alongside amusement.\"\n}\n\nBut note: the reason should be concise and grounded. I'll write a brief reason.\n\nMake sure the intensities align: emotions list has two, intensities list has two. Both low.\n\nAlternatively, maybe it's just contempt? Could be. But since the group is laughing together, it's playful, so happiness fits.\n\nI'll finalize.",
+      "usage": {
+        "prompt_tokens": 1466,
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 186,
+        "completion_tokens": 935,
+        "total_tokens": 2401,
+        "reasoning_tokens": 864
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 17,
+        "global_utterance_id": 17,
+        "speaker": "Chandler",
+        "utterance": "Finally, I figure I'd better answer it, and it turns out it's my mother, which is very-very weird, because- she never calls me!",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 17,
+        "speaker": "Chandler",
+        "emotions": [
+          "surprise"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Chandler finds the dream weird because his mother never calls, expressing mild surprise at the dream's bizarre twist."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: {\"utterance_id\": 17, \"speaker\": \"Chandler\", \"utterance\": \"Finally, I figure I'd better answer it, and it turns out it's my mother, which is very-very weird, because- she never calls me!\"}\n\nContext: Chandler is telling a dream story to the group. He's been describing a naked-in-school dream, and then a phone appears. He's in the middle of narrating the dream, and now he says this final line. He's describing how in the dream he answered the phone and it was his mother, which is weird because she never calls him. The tone is humorous, part of the sitcom banter. He says \"very-very weird\" with emphasis.\n\nNow, what is the speaker's (Chandler's) internal state? He is not currently experiencing the dream; he is recounting it to friends. He might be amused at the absurdity of the dream, or he might be expressing mild surprise or confusion at the weirdness of the dream. The line itself is a factual statement about the dream, but the delivery and context suggest he's sharing an amusing anecdote. He's likely feeling some amusement or interest in sharing this odd story. But the primary emotion might be a mix: he's describing something weird, so there could be a hint of surprise (at the weirdness), but it's not real-time surprise because it's a recounted dream. Alternatively, he might be simply narrating neutrally, but the speech is slightly exaggerated: \"very-very weird\" indicates he finds it weird. \"Weird\" can be associated with surprise or confusion. Since it's a dream, it's not eliciting strong emotions like fear or happiness. The group is listening, and his previous lines were leading up to a punchline. Actually, the line is the punchline: the weird thing is that his mother calls him in the dream, but in reality she never calls. That's a self-deprecating joke about his relationship with his mother. He might be feeling a mix of slight embarrassment or pain (since it hints at a distant mother), but he's joking about it. In a sitcom, Chandler often uses humor to cover up deeper emotions, but here, he's just telling a funny dream. The emotion is probably amusement at the dream's absurdity, or interest in sharing it. He says \"very-very weird\" with emphasis, which could indicate mild surprise even in recounting. However, the key is to be cautious: not to over-interpret. The direct reading is that he's recounting a weird dream. The emotion is likely neutral with a touch of interest or mild surprise. Could be \"interest\" because he's engaged in telling the story and finds it interesting. Alternatively, \"surprise\" because the dream is surprising to him. But the surprise is in the content, not his current feeling. As per guidelines, when describing an event, we should feel the emotions in the describing. So he is expressing that the dream was weird, so he might be conveying surprise/disbelief. But it's a retelling, so not high intensity.\n\nConsidering the sitcom context, the line is delivered deadpan or with slight emphasis, and the audience might laugh. But we're not labeling audience emotion; we're labeling Chandler's emotion. I'd lean towards \"surprise\" at a low intensity (because he finds it weird) or \"interest\" because he's sharing something. But let's see: he says \"which is very-very weird, because- she never calls me!\" The phrase \"very-very weird\" suggests he finds it bizarre. So he's expressing that he finds it bizarre. That could be \"surprise\" (mild). The reason: He's recounting a dream where his mother calls, which is weird because she never calls in real life, so he's expressing mild surprise/bewilderment at the dream's oddness. No strong negative emotions like sadness or anger, though there might be a hint of sadness about his mother not calling, but he masks it with humor. But as per careful labeling, we should stick to the surface emotion unless there's strong evidence. The context doesn't strongly indicate hidden sadness here; it's a joke. So I'll go with mild surprise. Could also be neutral with interest, but \"very-very weird\" is more than neutral. So surprise, low intensity.\n\nAlternatively, it could be a mix of surprise and interest, but I think surprise is more salient. \n\nThus: emotions: [\"surprise\"], intensities: [\"low\"]. Reason: Chandler finds the dream weird because his mother never calls, expressing mild surprise at the dream's bizarre twist.\n\nI'll output JSON.",
+      "usage": {
+        "prompt_tokens": 1527,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 119,
+        "completion_tokens": 1040,
+        "total_tokens": 2567,
+        "reasoning_tokens": 980
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 18,
+        "global_utterance_id": 18,
+        "speaker": "Ross",
+        "utterance": "Hi.",
+        "inline_description": [
+          "mortified"
+        ]
+      },
+      "label": {
+        "utterance_id": 18,
+        "speaker": "Ross",
+        "emotions": [
+          "embarrassment"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "reason": "Ross is mortified upon entering, still reeling from his wife leaving him."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: Ross says \"Hi.\" [mortified]. The description says \"Ross has entered\" and then \"[mortified]\" after the line. So the stage direction indicates Ross is mortified. Mortified means feeling embarrassed, ashamed, humiliated. So his emotion is likely embarrassment or shame. The context: Ross just entered the café right after Chandler's embarrassing dream story, but note the timing: Chandler's story ended with \"she never calls me!\" and then time lapse, Ross enters. The \"[mortified]\" is in the description after \"Hi.\" So at the moment of speaking \"Hi.\", Ross is mortified. Why? Possibly because of his situation: his wife Carol just left him for a woman, and he's feeling down, or he just heard the tail end of the conversation? But the transcript doesn't show that he heard the story. He simply enters and says \"Hi.\" and is described as mortified. That suggests his emotional state is one of embarrassment or shame, perhaps about his personal life. So we can label it as embarrassment. Also maybe sadness? But the direction specifically says mortified, which is embarrassment. So emotions: [\"embarrassment\"]. Intensity: medium? The description is just \"[mortified]\", no strong indicators like blushing or stammering, but it's a stage direction. Since it's a brief \"Hi.\" and mortified, it's probably medium intensity. Not extreme high, not low. So intensities: [\"medium\"]. Reason: Ross enters feeling embarrassed about his recent divorce, as he is still processing his wife leaving him. That fits.\n\nCheck rules: emotions must be from list. embarrassment is on the list. intensity: medium. Reason concise.\n\nThus final JSON: {\"utterance_id\": 18, \"speaker\": \"Ross\", \"emotions\": [\"embarrassment\"], \"intensities\": [\"medium\"], \"reason\": \"Ross is mortified upon entering, still reeling from his wife leaving him.\"}",
+      "usage": {
+        "prompt_tokens": 1515,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 107,
+        "completion_tokens": 466,
+        "total_tokens": 1981,
+        "reasoning_tokens": 412
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 19,
+        "global_utterance_id": 19,
+        "speaker": "Joey",
+        "utterance": "This guy says hello, I wanna kill myself.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 19,
+        "speaker": "Joey",
+        "emotions": [
+          "anger"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Joey is annoyed by Ross's mortified greeting, expressing frustration with exaggerated sarcasm."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: {\"utterance_id\": 19, \"speaker\": \"Joey\", \"utterance\": \"This guy says hello, I wanna kill myself.\"}\n\nWe need to consider the context: The scene is at Central Perk. Ross has just entered, saying \"Hi\" in a mortified manner. Joey responds with \"This guy says hello, I wanna kill myself.\" This is a sarcastic, exaggerated comment about how awkward or depressing the situation is. Joey is likely expressing frustration, annoyance, or perhaps dry humor. He isn't literally suicidal; it's a hyperbolic statement indicating that something about the way Ross said hello (with such mortification) makes Joey feel extremely uncomfortable or frustrated.\n\nEmotions to consider: Joey might be feeling irritation or a mild form of anger/disgust at the situation? But it's more of a comedic line. The speaker is Joey, and his inner state is probably one of exasperated annoyance. The line is funny to the audience, but Joey himself is expressing that the awkwardness is so intense he'd rather die. Could be a blend of frustration and perhaps a bit of unhappiness. However, labeling it as \"anger\" might be too strong; it's more like a dry, sarcastic remark born out of annoyance. \"Sadness\" doesn't fit because he's not genuinely sad. \"Fear\" no. \"Disgust\" might be a stretch. It's more a reaction to Ross's awkwardness causing discomfort. \"Interest\" no. \"Surprise\" no (Ross entered, but Joey's line is not about surprise). Perhaps \"embarrassment\"? Joey might be feeling secondhand embarrassment for Ross. But the line itself is a hyperbolic expression of wanting to die, which could be interpreted as a strong expression of frustration. In many emotion taxonomies, such an utterance might fall under \"annoyance\", which is a mild form of anger. But our set includes \"anger (愤怒)\" which could be appropriate at low intensity. However, the intensity of the statement \"I wanna kill myself\" suggests a high intensity, but it's clearly not literal. So it's comedic exaggeration. The underlying real emotion is probably moderate annoyance or frustration. Alternatively, it could be a joke expressing \"this is so awkward it's painful\". We might consider \"embarrassment\" because Joey is embarrassed for Ross or the situation. But the speaker is Joey, and he is not the one who did something embarrassing; Ross is the one who is mortified. Joey is observing and commenting. So it's more like a reaction of exasperation.\n\nLet's see the context: Ross entered, mortified, and said \"Hi.\" Joey's response is a sarcastic exaggeration. The line \"I wanna kill myself\" is a common hyperbolic expression for when something is extremely tedious or uncomfortable. So the emotion could be labeled as \"annoyance\" which is not directly in our list, but \"anger\" can cover annoyance. So perhaps \"anger\" at a low or medium intensity? But \"anger\" typically involves confrontation or feeling wronged. Joey isn't really angry at Ross, just annoyed at the depressing mood. Alternatively, \"disgust\" could fit if he's expressing revulsion at how pathetic the situation is. But I think it's more of a dry, sarcasm-laden line indicating that the awkwardness is unbearable. It could also be seen as \"sadness\" in a hyperbolic way? No, not genuine sadness.\n\nLooking at the emotion labels: We have contempt, shame, guilt, etc. Perhaps \"contempt\" because Joey is belittling Ross's demeanor? But Joey's tone might not be contemptuous; it's more like a weary joke. The transcript doesn't specify tone, but from the show, Joey's delivery is typically comedic and exasperated. I recall this scene: Ross comes in all depressed, and Joey says this line with a deadpan expression, implying that Ross's misery is so potent it's killing the vibe. So Joey is expressing that he finds Ross's demeanor extremely off-putting or depressing. That could be a mix of \"disgust\" and \"sadness\"? But we need to pick one or more from the list.\n\nPossibly \"anger\" at low intensity? Or \"disgust\" at medium? I think the most fitting primary emotion is \"annoyance,\" which is a form of anger. But is it directed at Ross? Yes, because Ross's greeting is so pitiful that it becomes annoying. So Joey is annoyed at Ross. So I'll go with \"anger\" at low intensity, because it's not explosive; it's more dry. Or maybe \"contentment\"? No.\n\nAlternatively, could it be \"neutral\"? No, there's clearly an emotional tone.\n\nI'll also consider \"embarrassment\": Is Joey embarrassed for Ross? Possibly, but he doesn't show it; he channels it into sarcasm. Hard to say.\n\nGiven the guidelines: \"Most utterances do not require deep hidden motives.\" So take it at face value: Joey is saying that Ross's hello makes him want to die, meaning the situation is so unbearably awkward or depressing. That indicates a negative emotion. The closest in the list might be \"sadness\" if he feels so bad that he wants to die, but that's too literal. No, it's hyperbole for frustration. So I'll stick with \"anger\" (as annoyance) or \"disgust\" (as revulsion to the awkwardness). Which is better? \"Disgust\" is defined as aversion, wanting to distance oneself. Joey might feel that. \"Anger\" is about being blocked or wronged. Ross's depressed state might be blocking the fun atmosphere, so Joey is annoyed. Both could work, but I think \"anger\" (low) is plausible.\n\nIntensity: Despite the hyperbolic wording, the actual emotional intensity behind the sarcasm is likely low to medium. It's not a strong outburst. I'd say \"low\" because it's a deadpan line. The show's comedy often has characters underreact. So emotions: [\"anger\"], intensities: [\"low\"].\n\nBut the guidelines say if multiple are hard to distinguish, you can label them all. I think it's primarily anger. I'll go with that.\n\nReason: Joey is annoyed by Ross's mortified greeting, expressing frustration with exaggerated sarcasm.\n\nThus, answer: {\"utterance_id\": 19, \"speaker\": \"Joey\", \"emotions\": [\"anger\"], \"intensities\": [\"low\"], \"reason\": \"Joey is annoyed by Ross's mortified greeting, expressing frustration with exaggerated sarcasm.\"}\n\nBut let's ensure nothing else fits better. I'll output JSON.",
+      "usage": {
+        "prompt_tokens": 1538,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 130,
+        "completion_tokens": 1443,
+        "total_tokens": 2981,
+        "reasoning_tokens": 1388
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 20,
+        "global_utterance_id": 20,
+        "speaker": "Monica",
+        "utterance": "Are you okay, sweetie?",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 20,
+        "speaker": "Monica",
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "reason": "She is concerned about her brother's well-being after seeing him enter mortified, and uses a caring tone."
+      },
+      "cot": "We are asked to label the emotion of the final utterance (utterance_id 20) by Monica: \"Are you okay, sweetie?\". We need to consider the context: Ross has just entered, and the stage direction says [mortified]. Joey then comments \"This guy says hello, I wanna kill myself.\" Monica immediately asks Ross \"Are you okay, sweetie?\".\n\nWe need to infer Monica's emotion when she says this. She sees Ross looking mortified, and Joey's comment indicates Ross is in a bad way. Monica is Ross's sister and she is likely concerned. Her tone would be caring and worried. The word \"sweetie\" adds a comforting, affectionate tone. So her primary emotion is probably sadness or concern, but we have a specific emotion set. Concern isn't one of them, but sadness might fit if she feels for him. However, \"Are you okay?\" is often said with worry or fear that something bad has happened. Could be fear (low-medium) about Ross's state. Also, she might be feeling empathy, which could be sadness. But let's check the emotion list: sadness is \"失去、失败、分离、拒绝、失望或关系受损引发的低落。\" She's not experiencing a loss herself, but she's reacting to Ross's apparent distress. It could be interest if she's just curious, but given the mortified description and Joey's comment, it's clear something is wrong, so she's likely concerned. Concern can map to a mild fear (worried about his well-being) or sadness (sad that he's feeling bad). Also, she might be feeling a bit of love/care, which isn't directly listed. In the given emotions, \"fear\" is defined as \"面对威胁、危险、惩罚、损失或坏结果预期时的防御性情绪。\" She's not directly threatened, but she might fear that something bad has happened to him. \"Sadness\" might be more appropriate as she's feeling his pain. Alternatively, \"neutral\" if she's just casually asking, but the \"sweetie\" suggests otherwise.\n\nLet's read the scene: Ross has just entered, mortified. Joey: \"This guy says hello, I wanna kill myself.\" That indicates Ross looks terrible. Monica, being his sister, immediately asks if he's okay. Her emotion is likely worry and care. In the list, \"fear\" might be the closest for worry. But worry is a low-level fear. I think \"fear\" with low intensity could work. Or \"sadness\" if she's feeling sympathetic sadness. I'll go with \"sadness\" because she's likely feeling upset that he's upset. Alternatively, both could be present. The instruction says if two or more emotions are hard to distinguish, you can label them all. But I think it's better to pick one. Let's see the context: Ross's wife just left him for a woman, so he's been in a bad state. Monica knows this. So her \"Are you okay, sweetie?\" is checking on his emotional state. She might be feeling some sadness herself. I'll label \"sadness\" with low or medium intensity. Given the \"sweetie\", it's a tender moment, so intensity might be medium. But it's not overwhelming sadness, more like concern. Actually, concern might be a blend of interest and mild fear. In the XED set, \"caring\" isn't there. I think \"sadness\" is reasonable.\n\nNote: The transcript says \"mortified\" for Ross. Mortified means deeply embarrassed or ashamed. So Ross feels shame/embarrassment. Monica might perceive that and feel empathy, leading to sadness. So I'll go with sadness.\n\nIntensity: Since it's a gentle, caring question, I'd say low or medium. It's not high. I'll pick medium because her concern is clear.\n\nThus: emotions: [\"sadness\"], intensities: [\"medium\"].\n\nBut wait, the utterance is just \"Are you okay, sweetie?\" It could also be interpreted as curiosity or interest, but the \"sweetie\" makes it more emotional. So sadness fits.\n\nFinal JSON: {\"utterance_id\": 20, \"speaker\": \"Monica\", \"emotions\": [\"sadness\"], \"intensities\": [\"medium\"], \"reason\": \"She is concerned about her brother's well-being after seeing him enter mortified, and uses a caring tone.\"}\n\nI'll output that.",
+      "usage": {
+        "prompt_tokens": 1546,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 138,
+        "completion_tokens": 989,
+        "total_tokens": 2535,
+        "reasoning_tokens": 928
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 21,
+        "global_utterance_id": 21,
+        "speaker": "Ross",
+        "utterance": "I just feel like someone reached down my throat, grabbed my small intestine, pulled it out of my mouth and tied it around my neck...",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 21,
+        "speaker": "Ross",
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "high"
+        ],
+        "reason": "Ross uses a visceral, extreme metaphor to convey the depth of his emotional pain after his wife left him, indicating deep sadness."
+      },
+      "cot": "We are asked to label the emotion of the final utterance. The final utterance is Ross saying: \"I just feel like someone reached down my throat, grabbed my small intestine, pulled it out of my mouth and tied it around my neck...\".\n\nWe have the context. Earlier, Ross enters looking \"mortified\" (as per description). Joey reacts humorously. Monica asks if he's okay. Ross then delivers this line.\n\nWe need to infer Ross's emotion. From the episode synopsis, Ross's wife Carol has just left him for a woman. He's clearly distressed. His description of feeling is visceral and dramatic, indicating deep emotional pain. The feeling he describes is like being physically violated and choked. This metaphor suggests grief, despair, feeling gutted. It sounds like extreme sadness, perhaps with anger or disgust at the situation? But the direct emotion is sadness—loss, betrayal. He might also feel fear about the future, or shame/embarrassment? But primarily it's sadness. He's expressing his emotional pain in a vivid way. There's no hint of anger in his words; it's more about feeling disemboweled, which is a metaphor for being hurt deeply. So sadness is appropriate. Could there be disgust? He describes something disgusting (guts pulled out), but that's a metaphor for his pain, not that he feels disgust towards something. So it's primarily sadness.\n\nIntensity: His description is extreme, so it's high sadness. He's not just a little sad; he's feeling devastated.\n\nGiven the emotions list, sadness is the best fit. Also, from the description, Ross entered \"mortified,\" which suggests humiliation or embarrassment, but his utterance is about visceral pain, so sadness is more core.\n\noptions: anger, disgust, fear, happiness, surprise, sadness, contentment, relief, interest, contempt, shame, guilt, embarrassment, neutral.\n\nDisgust: He's not expressing revulsion; he's using a graphic metaphor, but the feeling is grief. Fear: Might be present but not directly expressed. Shame/embarrassment: He might feel humiliated by his wife leaving him for someone else, but his metaphor is about pain, not covering up. So sadness is primary.\n\nIntensity: high.\n\nThus, emotions: [\"sadness\"], intensities: [\"high\"].\n\nReason: \"Ross is devastated after his wife left him, and he describes his emotional pain in a visceral metaphor, indicating deep sadness.\"\n\nNow output JSON.",
+      "usage": {
+        "prompt_tokens": 1598,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 190,
+        "completion_tokens": 568,
+        "total_tokens": 2166,
+        "reasoning_tokens": 505
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 22,
+        "global_utterance_id": 22,
+        "speaker": "Chandler",
+        "utterance": "Cookie?",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 22,
+        "speaker": "Chandler",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Chandler offers a cookie as a humorously deflecting response to Ross's dramatic description; no clear emotion is expressed, just a neutral comedic interjection."
+      },
+      "cot": "We are given a transcript and need to label the emotion of the final utterance: Chandler saying \"Cookie?\" in response to Ross's dramatic description of his emotional pain. \n\nLet's analyze the context:\n- Ross enters, looking mortified. He says: \"Hi.\" \n- Joey reacts with a pessimistic line: \"This guy says hello, I wanna kill myself.\" \n- Monica asks if he's okay. \n- Ross then describes his feeling in a very vivid, graphic metaphor: \"I just feel like someone reached down my throat, grabbed my small intestine, pulled it out of my mouth and tied it around my neck...\"\n- Immediately, Chandler says: \"Cookie?\"\n\nChandler's line is clearly a joke, a comedic deflection. He is offering a cookie, perhaps as a comfort food, but more likely as a humorous non-sequitur to lighten the mood or because he doesn't know how to respond to such intense emotional venting. Chandler often uses sarcasm or humor to defuse situations.\n\nNow, what is Chandler's emotion? He is not expressing anger, disgust, fear, sadness, etc. He is making a joke. The utterance is short and playful. Is he happy? He might be amused by his own wit or trying to be funny. But labeling it as \"happiness\" might be over-interpreting. The instruction says: \"Do not over-interpret jokes, filler lines, brief confirmations, or casual narration. A funny line is not happiness unless the speaker is personally amused.\" So just because the line is funny to the audience doesn't mean Chandler is feeling happiness. He might feel some lighthearted amusement, but likely it's just a neutral line to change the subject or offer a cookie. The offer of a cookie might be genuine? But given the context, it's clearly a joke because Ross is describing something terrible and Chandler's response is absurdly inadequate. \n\nChandler might be feeling awkward or trying to inject humor. The emotion could be neutral with a hint of playfulness, but I think it's safe to label it as neutral because there is no strong emotional expression. The instruction: \"If the direct reading is neutral or low-intensity, keep it neutral or low unless there is clear textual or contextual evidence for a stronger emotion.\" Here, evidence for any specific emotion is weak. So I'll label it neutral.\n\nEmotions: [\"neutral\"]\nIntensities: [\"none\"]\nReason: Chandler offers a cookie as a humorously deflecting response to Ross's dramatic description; no clear emotion is expressed, just a neutral comedic interjection.\n\nI'll output the JSON.",
+      "usage": {
+        "prompt_tokens": 1579,
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 171,
+        "completion_tokens": 599,
+        "total_tokens": 2178,
+        "reasoning_tokens": 530
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 23,
+        "global_utterance_id": 23,
+        "speaker": "Monica",
+        "utterance": "Carol moved her stuff out today.",
+        "inline_description": [
+          "explaining to the others"
+        ]
+      },
+      "label": {
+        "utterance_id": 23,
+        "speaker": "Monica",
+        "emotions": [
+          "neutral"
+        ],
+        "intensities": [
+          "none"
+        ],
+        "reason": "Monica is matter-of-factly explaining Ross's distress to the group."
+      },
+      "cot": "We are asked to label the emotion of utterance 23: \"Carol moved her stuff out today.\" spoken by Monica. The context: Ross just entered mortified and described his pain metaphorically. Monica then explains to the others what happened: \"Carol moved her stuff out today.\" This is Monica providing context to the group about why Ross is upset. She is likely feeling sympathetic, perhaps a bit sad for Ross, but her tone is probably matter-of-fact or explanatory. There's no strong emotion in her words; she's informing. There could be a touch of sadness for her brother's situation, but it's mostly neutral. Let's check the rules: \"If the direct reading is neutral or low-intensity, keep it neutral or low unless there is clear textual or contextual evidence for a stronger emotion.\" She is just stating a fact. So neutral is appropriate. Emotions: [\"neutral\"], intensities: [\"none\"]. Reason: Monica is simply informing the group about why Ross is upset, with no evident emotion of her own. So final JSON: {\"utterance_id\": 23, \"speaker\": \"Monica\", \"emotions\": [\"neutral\"], \"intensities\": [\"none\"], \"reason\": \"Monica is matter-of-factly explaining Ross's distress to the group.\"}",
+      "usage": {
+        "prompt_tokens": 1602,
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 66,
+        "completion_tokens": 313,
+        "total_tokens": 1915,
+        "reasoning_tokens": 261
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 24,
+        "global_utterance_id": 24,
+        "speaker": "Joey",
+        "utterance": "Ohh.",
+        "inline_description": []
+      },
+      "label": {
+        "utterance_id": 24,
+        "speaker": "Joey",
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "medium"
+        ],
+        "reason": "Joey's 'Ohh.' is a sympathetic reaction to learning that Ross's wife moved out, conveying sadness for his friend's situation."
+      },
+      "cot": "We are asked to label the emotion of Joey's utterance \"Ohh.\" in response to Monica explaining that Ross's wife Carol moved her stuff out. The context: Ross just expressed feeling terrible with a vivid metaphor, and Monica explains to the others that Carol moved her stuff out today. Joey's \"Ohh.\" is a reaction to hearing that news. It's an expression of sympathy or realization of the gravity of the situation. Given the context, Joey is likely feeling sadness or empathy for Ross. His tone as described might be soft and understanding. The appropriate emotion could be sadness (low or medium intensity). Let's consider: Joey makes a joke earlier about Ross saying hello making him want to kill himself, but now he's serious upon hearing the reason. So his \"Ohh.\" likely conveys sadness or a sympathetic disappointment. It's not neutral because it's an emotional reaction. Could also be surprise, but the news is not unexpected given Ross's state; it's more of a deeper understanding. So sadness seems fitting. Intensity: probably medium, as it's a clear recognition of a sad event, not a strong outburst. So emotions: [\"sadness\"], intensities: [\"medium\"].",
+      "usage": {
+        "prompt_tokens": 1605,
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 69,
+        "completion_tokens": 313,
+        "total_tokens": 1918,
+        "reasoning_tokens": 240
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "utterance": {
+        "type": "utterance",
+        "utterance_id": 25,
+        "global_utterance_id": 25,
+        "speaker": "Monica",
+        "utterance": "Let me get you some coffee.",
+        "inline_description": [
+          "to Ross"
+        ]
+      },
+      "label": {
+        "utterance_id": 25,
+        "speaker": "Monica",
+        "emotions": [
+          "sadness"
+        ],
+        "intensities": [
+          "low"
+        ],
+        "reason": "Monica is offering coffee as a comforting gesture after learning Ross's wife left him, reflecting empathetic sadness for his situation."
+      },
+      "cot": "We are asked to label the emotion of the final utterance: \"Let me get you some coffee.\" spoken by Monica. We need to consider the context: Ross has just entered, obviously upset (mortified), and Monica has explained to the others that Carol moved her stuff out, meaning Ross's wife left him. Monica is sympathetic and caring. She offers to get him coffee as a comforting gesture. So the emotion is likely one of concern, care, perhaps sadness for Ross's situation. It's not a strong emotion, but it's clearly not neutral. Possible labels: sadness? But she's not expressing sadness herself; she's showing concern. Maybe interest? No, it's more nurturing. Perhaps contentment? Not quite. The emotion she's displaying is a mix of sympathy and a desire to help. In terms of the given labels, \"sadness\" might fit because she feels sad for Ross, but she's not crying or anything. It's more low-intensity sadness or perhaps \"interest\" in his wellbeing. However, the phrase \"Let me get you some coffee\" is an offer of comfort, which often stems from empathy and a wish to alleviate his distress. I'd interpret her inner state as concerned, caring, slightly sad for him. The most appropriate label might be \"sadness\" (low) because she's reacting to a sad event. Alternatively, it could be \"neutral\" if we think it's just a practical offer, but given her tone (as indicated by the stage direction \"[to Ross]\" and the context), it's meant to be caring. She's not neutral. I'll go with \"sadness\" at low intensity. Reason: Monica is offering coffee to console Ross after learning his wife moved out, showing empathetic sadness.",
+      "usage": {
+        "prompt_tokens": 1624,
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 88,
+        "completion_tokens": 421,
+        "total_tokens": 2045,
+        "reasoning_tokens": 358
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}
