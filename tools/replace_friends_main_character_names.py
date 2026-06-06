@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Replace Friends main-character names in cleaned episode JSON.
+"""Replace Friends main-character names in cleaned episode JSON/JSONL.
 
 The script is intentionally non-destructive: it reads the source JSON and
-writes a new JSON file unless --in-place is explicitly provided.
+writes a new file unless --in-place is explicitly provided.
 """
 
 from __future__ import annotations
@@ -11,6 +11,7 @@ import argparse
 import copy
 import json
 import re
+import shutil
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
@@ -64,10 +65,20 @@ DEFAULT_REPLACEMENTS: tuple[NameReplacement, ...] = (
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Replace Friends main-character names throughout cleaned episode JSON."
+        description="Replace Friends main-character names throughout cleaned episode JSON/JSONL."
     )
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="Output path. Defaults to *_renamed.json or *_renamed.jsonl based on --input.",
+    )
+    parser.add_argument(
+        "--format",
+        choices=["auto", "json", "jsonl"],
+        default="auto",
+        help="Input/output format. auto uses the input suffix.",
+    )
     parser.add_argument(
         "--mapping-json",
         type=Path,
@@ -239,6 +250,76 @@ def write_json(path: Path, data: Any, indent: int) -> None:
         f.write("\n")
 
 
+def detect_format(path: Path, requested: str) -> str:
+    if requested != "auto":
+        return requested
+    if path.suffix.lower() == ".jsonl":
+        return "jsonl"
+    if path.suffix.lower() == ".json":
+        return "json"
+    raise ValueError(f"Cannot infer format from suffix: {path}")
+
+
+def default_output_path(input_path: Path, data_format: str) -> Path:
+    if input_path == DEFAULT_INPUT and data_format == "json":
+        return DEFAULT_OUTPUT
+    suffix = ".jsonl" if data_format == "jsonl" else ".json"
+    return input_path.with_name(f"{input_path.stem}_renamed{suffix}")
+
+
+def read_jsonl(path: Path) -> list[Any]:
+    rows: list[Any] = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line_no, line in enumerate(handle, start=1):
+            if not line.strip():
+                continue
+            try:
+                rows.append(json.loads(line))
+            except json.JSONDecodeError as exc:
+                raise ValueError(f"Invalid JSONL at {path}:{line_no}: {exc}") from exc
+    return rows
+
+
+def process_jsonl(
+    *,
+    input_path: Path,
+    output_path: Path,
+    pattern: re.Pattern[str],
+    replacements_by_lower: dict[str, NameReplacement],
+    replace_lowercase: bool,
+    dry_run: bool,
+) -> Counter[str]:
+    changed_counts: Counter[str] = Counter()
+    output_handle = None
+    try:
+        if not dry_run:
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            output_handle = output_path.open("w", encoding="utf-8")
+        with input_path.open("r", encoding="utf-8") as input_handle:
+            for line_no, line in enumerate(input_handle, start=1):
+                if not line.strip():
+                    if output_handle is not None:
+                        output_handle.write(line)
+                    continue
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError as exc:
+                    raise ValueError(f"Invalid JSONL at {input_path}:{line_no}: {exc}") from exc
+                replaced_row = replace_recursive(
+                    row,
+                    pattern,
+                    replacements_by_lower,
+                    changed_counts,
+                    replace_lowercase,
+                )
+                if output_handle is not None:
+                    output_handle.write(json.dumps(replaced_row, ensure_ascii=False) + "\n")
+    finally:
+        if output_handle is not None:
+            output_handle.close()
+    return changed_counts
+
+
 def main() -> None:
     args = parse_args()
     replacements = load_replacements(args.mapping_json)
@@ -246,9 +327,15 @@ def main() -> None:
     if len(replacements_by_lower) != len(replacements):
         raise ValueError("Duplicate replacement sources after case-folding.")
 
+    data_format = detect_format(args.input, args.format)
+    output_path = args.input if args.in_place else args.output or default_output_path(args.input, data_format)
     pattern = compile_pattern(replacements)
-    with args.input.open("r", encoding="utf-8") as f:
-        data = json.load(f)
+
+    if data_format == "json":
+        with args.input.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+    else:
+        data = read_jsonl(args.input)
 
     before_counts = collect_string_counts(
         data, pattern, replacements_by_lower, args.replace_lowercase
@@ -258,25 +345,39 @@ def main() -> None:
     if args.stats_only:
         return
 
-    output_path = args.input if args.in_place else args.output
     if args.in_place:
         backup_path = args.input.with_suffix(args.input.suffix + ".bak")
-        write_json(backup_path, data, args.indent)
+        if data_format == "json":
+            write_json(backup_path, data, args.indent)
+        else:
+            shutil.copy2(args.input, backup_path)
         print(f"Backup written: {backup_path}")
 
-    changed_counts: Counter[str] = Counter()
-    replaced = replace_recursive(
-        copy.deepcopy(data),
-        pattern,
-        replacements_by_lower,
-        changed_counts,
-        args.replace_lowercase,
-    )
+    if data_format == "jsonl":
+        changed_counts = process_jsonl(
+            input_path=args.input,
+            output_path=output_path,
+            pattern=pattern,
+            replacements_by_lower=replacements_by_lower,
+            replace_lowercase=args.replace_lowercase,
+            dry_run=args.dry_run,
+        )
+        replaced = None
+    else:
+        changed_counts = Counter()
+        replaced = replace_recursive(
+            copy.deepcopy(data),
+            pattern,
+            replacements_by_lower,
+            changed_counts,
+            args.replace_lowercase,
+        )
     print_counts("Applied replacements:", changed_counts, replacements)
 
     report = {
         "input": str(args.input),
         "output": str(output_path),
+        "format": data_format,
         "mapping_json": str(args.mapping_json) if args.mapping_json else None,
         "replace_lowercase": args.replace_lowercase,
         "counts": dict(changed_counts),
@@ -287,10 +388,11 @@ def main() -> None:
         print(f"Report written: {args.report}")
 
     if args.dry_run:
-        print("Dry run: output JSON was not written.")
+        print("Dry run: output file was not written.")
         return
 
-    write_json(output_path, replaced, args.indent)
+    if data_format == "json":
+        write_json(output_path, replaced, args.indent)
     print(f"Output written: {output_path}")
     print(f"Total replacements: {sum(changed_counts.values())}")
 
