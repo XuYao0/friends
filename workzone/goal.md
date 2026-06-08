@@ -70,15 +70,3 @@ Agent 按剧情顺序不断接收台词作为输入。预测第 t 句时，系�
 情绪模型、理论依据、Plutchik 当前 schema 以及 Ekman/Izard/Plutchik 标签对照见 `workzone/情绪模型.md`。
 
 ## ai-user 交互
-anger、disgust、fear、happiness、surprise、sadness、contentment、relief、interest、contempt、shame、guilt、
-  embarrassment、neutral
-
-
-## something
-S05E24合并到了S05E23。
-S06E16合并到了S06E15。
-S06E25合并到了S06E24。
-S07E24合并到了S07E23。
-S08E24合并到了S08E23。
-S09E24合并到了S09E23。
-S10E18合并到了S10E17。
