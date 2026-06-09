@@ -1,0 +1,9 @@
+baselines:
+  - current_only
+  - short_window
+  - long_window
+  - summary_memory
+  - retrieval_memory
+  - structured_memory
+  - full_agent
+  - full_agent_label_feedback

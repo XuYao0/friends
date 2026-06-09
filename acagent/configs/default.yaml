@@ -1,0 +1,16 @@
+transcript_path: screenplays/friends_records_renamed_s03_example_prefix_with_selected.jsonl
+batch_size: 50
+local_context_window: 12
+cheap_update_model: deepseek-v4-pro
+reasoning_model: deepseek-v4-pro
+judge_model: deepseek-v4-pro
+temperature:
+max_tokens: 4096
+event_search_top_k: 5
+max_read_events: 5
+max_tool_calls: 30
+memory_update_mode: unsupervised
+prompt_version: v0.1
+memory_update_prompt_path: acagent/prompts/memory_update.md
+emotion_labeling_prompt_path: acagent/prompts/emotion_labeling.md
+output_dir: acagent_outputs/default
